@@ -1,0 +1,6 @@
+.events {
+    display: flex;
+    /* flex-direction: row; */
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
