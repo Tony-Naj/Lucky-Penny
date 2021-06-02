@@ -1,8 +1,15 @@
+@import url(//db.onlinewebfonts.com/c/ba9019aa1b39b36ff007750ecf8296bf?family=LibertyW01-SC);
+.body {
+  font-family: 'LibertyW01-SC'
+}
+
 .App {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-family: 'LibertyW01-SC'
+  /* font-family: 'Liberty Sans Regular'; */
 }
 
 .penny-lore {
@@ -16,7 +23,7 @@
 .wrapper {
   /* The height needs to be set to a fixed value for the effect to work.
      * 100vh is the full height of the viewport. */
-     height: 70vh;
+     height: 100vh;
      /* The scaling of the images would add a horizontal scrollbar, so disable x overflow. */
      overflow-x: hidden;
      /* Enable scrolling on the page. */
@@ -33,6 +40,7 @@
   right: 0;
   bottom: 0;
   left: 0;
+  height: 500px;
   /* Move the pseudo-element back away from the camera,
      * then scale it back up to fill the viewport.
      * Because the pseudo-element is further away, it appears to move more slowly, like in real life. */
@@ -40,7 +48,7 @@
      /* Force the background image to fill the whole element. */
      background-size: 100%;
      /* Keep the image from overlapping sibling elements. */
-     z-index: -1;
+     z-index: -4;
 
 }
 
@@ -48,13 +56,34 @@
   background: whitesmoke;
   height: 500px;
 }
+.bg1 {
+  height: 600px;
+  position: relative;
+  bottom: 1.3rem;
+}
+.bg2 {
+  height: 800px;
+  /* position: relative; */
+  /* top: 4rem; */
+}
 
+.bg3 {
+  height: 800px;
+  position: relative;
+  /* top: 4rem; */
+}
 .bg1::after {
   background-image: url("https://i.ibb.co/DLx6t0r/uses-for-pennies.jpg");
-  height: 600px;
+  height: 1000px;
 }
 /* <a href="https://ibb.co/YbzK3H0"><img src="https://i.ibb.co/DLx6t0r/uses-for-pennies.jpg" alt="uses-for-pennies" border="0"></a> */
 .bg2::after {
+  background-image: url("https://i.ibb.co/DLx6t0r/uses-for-pennies.jpg");
+  /* height: 100px; */
+  background-repeat: no-repeat;
+}
+
+.bg3::after {
   background-image: url("https://i.ibb.co/DLx6t0r/uses-for-pennies.jpg");
   height: 600px;
   background-repeat: no-repeat;

@@ -5,17 +5,19 @@ import './DatePage.css'
 function DatePage() {
     const [events, setEvents] = useState([])
     const [births, setBirths] = useState([])
-//    axios.get(`https://history.muffinlabs.com/date/${month}/${day}`)
-   useEffect(() => {
+    const [day, setDay] = useState('')
+    const [month, setMonth] = useState('')
+   
+    useEffect(() => {
     axios
-   .get('https://history.muffinlabs.com/date/3/18')
-   .then ((res) => {
+    .get(`https://history.muffinlabs.com/date/${month}/${day}`)
+    .then ((res) => {
        console.log('Events:', res)
        const entries = Object.entries(res.data)
        console.log(entries)
        console.log('newdata:', entries[2][1].Events)
        console.log('births:', entries[2][1].Births )
-        setEvents(entries[2][1].Events)
+        setMonth(setDay(setEvents(entries[2][1].Events)))
         setBirths(entries[2][1].Births)
    })
    .catch(err => {
@@ -33,7 +35,6 @@ function DatePage() {
                 {events.map((item, index) => (
                     <div key={index}>
                             <p>{item.year}: {item.text}</p>
-                            {/* <p>{item.text}</p> */}
             </div>   
                 ))}
                 <div className='births'>

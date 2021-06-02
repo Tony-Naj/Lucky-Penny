@@ -49,13 +49,6 @@ function DateForm(props) {
                 <option value='December'></option>
                 </datalist> 
     
-            <input 
-              type="number" 
-              name="year" 
-              placeholder="Year" 
-              value={formValues.year} 
-              onChange={handleChange}
-            />
             <button>ENTER</button>
           </form >
       </div>

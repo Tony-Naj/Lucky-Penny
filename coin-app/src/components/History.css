@@ -1,3 +1,10 @@
+.history-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .history-penny {
     height: 240px;
     width: 475px;
