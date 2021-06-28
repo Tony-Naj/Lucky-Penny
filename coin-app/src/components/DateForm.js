@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { useHistory } from "react-router-dom";
 import axios from "axios";
-import DatePage from "./DateForm";
+import DatePage from "./DatePage";
 
 const initialFormValues = {
   day: "",
@@ -8,17 +9,17 @@ const initialFormValues = {
   year: "",
 };
 
-function DateForm(props) {
-  // const { setMonth, setDay, month, day } = props;
+function DateForm() {
   const [day, setDay] = useState("");
   const [month, setMonth] = useState("");
-  const [formValues, setFormValues] = useState(initialFormValues);
   const [events, setEvents] = useState([]);
   const [births, setBirths] = useState([]);
+  const [formValues, setFormValues] = useState(initialFormValues);
+
+  const history = useHistory();
 
   const handleChange = (e) => {
     setFormValues({ ...formValues, [e.target.name]: e.target.value });
-    console.log(setDay);
     setDay(formValues.day);
     setMonth(formValues.month);
   };
@@ -26,8 +27,7 @@ function DateForm(props) {
   const handleSubmit = (e) => {
     e.preventDefault();
     // console.log(formValues);
-    console.log(formValues.day);
-    console.log(formValues.month);
+    // history.push("/DatePage");
     fetchData();
   };
 
@@ -37,22 +37,27 @@ function DateForm(props) {
         `https://history.muffinlabs.com/date/${formValues.month}/${formValues.day}`
       )
       .then((res) => {
-        // console.log("Events:", res);
         const entries = Object.entries(res.data);
-        // console.log(entries);
-        // console.log("newdata:", entries[2][1].Events);
-        // console.log("births:", entries[2][1].Births);
         setMonth(setDay(setEvents(entries[2][1].Events)));
         setBirths(entries[2][1].Births);
+        console.log(res.data);
+        console.log(entries[2][1].Events);
+        console.log("entry", entries);
+        console.log(res.data.date);
+        console.log("props:", events, births);
       })
       .catch((err) => {
         console.log(err);
       });
   };
 
+  useEffect(() => {
+    fetchData();
+  }, []);
+
   return (
     <div>
-      <h3>Enter your Date of Birth</h3>
+      <h3>Enter your Special Date</h3>
       <form onSubmit={handleSubmit}>
         <input
           type="number"
@@ -86,32 +91,24 @@ function DateForm(props) {
           <option value="12" name="December"></option>
         </datalist>
 
+        <label type="text">Choose a Year:</label>
+        <input
+          type="text"
+          name="year"
+          list="daysofyear"
+          // value={formValues.month}
+          // onChange={handleChange}
+          id="year"
+        />
+
         <button type="submit" onSubmit={handleSubmit}>
           ENTER
         </button>
       </form>
-      <div className="date-div">
-        <div className="events">
-          <h3>Events:</h3>
-          {events.map((item, index) => (
-            <div key={index}>
-              <p>
-                {item.year}: {item.text}
-              </p>
-            </div>
-          ))}
-          <div className="births">
-            <h3>Births:</h3>
-            {births.map((item1, index1) => (
-              <div key={index1}>
-                <p>
-                  {item1.year}: {item1.text}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
+
+      {events.map((event) => (
+        <DatePage key={event.index} event={event} events={events} />
+      ))}
     </div>
   );
 }
