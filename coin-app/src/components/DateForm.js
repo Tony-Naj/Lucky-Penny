@@ -37,14 +37,20 @@ function DateForm() {
         `https://history.muffinlabs.com/date/${formValues.month}/${formValues.day}`
       )
       .then((res) => {
+        // const entries = res.data.entries
         const entries = Object.entries(res.data);
         setMonth(setDay(setEvents(entries[2][1].Events)));
         setBirths(entries[2][1].Births);
-        console.log(res.data);
-        console.log(entries[2][1].Events);
+        console.log("data", res.data);
+        console.log("events", entries[2][1].Events);
+        console.log("births", entries[2][1].Births);
         console.log("entry", entries);
-        console.log(res.data.date);
-        console.log("props:", events, births);
+        console.log("date", res.data.date);
+        console.log("Events:", entries.date);
+        // console.log("events", res.data[2]);
+        // console.log("events", res.data[1]);
+        console.log("events", entries[2][1].Events);
+        // console.log("events", res.data[1][2]);
       })
       .catch((err) => {
         console.log(err);
@@ -106,9 +112,11 @@ function DateForm() {
         </button>
       </form>
 
-      {events.map((event) => (
-        <DatePage key={event.index} event={event} events={events} />
-      ))}
+      {events
+        .filter((event) => event.year)
+        .map((event) => (
+          <DatePage event={event} value={event.year} />
+        ))}
     </div>
   );
 }

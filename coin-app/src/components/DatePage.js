@@ -3,17 +3,18 @@ import React from "react";
 import "./DatePage.css";
 
 function DatePage(props) {
-  const { events, births, event } = props;
-  // console.log("events:", event.year);
+  const { event, events } = props;
+  console.log("events:", event);
+  console.log("events:", events);
   // console.log("event:", event.day);
   // console.log("events:", event.text);
   return (
-    <div className="date-div">
+    <div key={event} className="date-div">
       <div className="events">
-        <h3>Events:</h3>
+        {/* <h3>Events:</h3> */}
 
         <p>
-          {event.year}: {event.text}
+          {event}: {event}
         </p>
 
         {/* <div className="births">

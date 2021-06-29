@@ -17,7 +17,7 @@ function App() {
         <HomePage />
       </Route>
 
-      <Route exact path="/DatePage">
+      <Route path="/DatePage">
         <DatePage />
       </Route>
     </div>
