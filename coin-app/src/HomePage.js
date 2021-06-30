@@ -3,12 +3,12 @@ import DateForm from "./components/DateForm";
 import History from "./components/History";
 
 function HomePage(props) {
-  const { events, setEvents, births, setBirths } = props;
+  const { events, setEvents, births, setBirths, date, setDate } = props;
 
   return (
-    <div className="wrapper">
-      <section className="section parallax bg1">
-        <div className="static">
+    <div>
+      <section>
+        <div>
           <h3>The Luck of The Penny</h3>
           <p>
             According to the book and the lore surrounding them, pennies are
@@ -18,8 +18,8 @@ function HomePage(props) {
           </p>
         </div>
       </section>
-      <section className="section parallax bg2">
-        <div className="static">
+      <section>
+        <div>
           <h3>Is Tails Up Unlucky?</h3>
           <p>
             Some people believe that picking up a penny that is tails up will
@@ -33,13 +33,13 @@ function HomePage(props) {
           </p>
         </div>
       </section>
-      <section className="section parallax bg3">
-        <div className="static">
+      <section>
+        <div>
           <p>
             According to the book and the lore surrounding them, pennies are
             especially lucky when you find them face up, as that means that you
             have more money on the way. Finding a penny after rainfall could
-            mean that the pennies came from heaven or from the gods.{" "}
+            mean that the pennies came from heaven or from the gods.
           </p>
         </div>
       </section>
@@ -47,14 +47,16 @@ function HomePage(props) {
         <div>
           <DateForm
             events={events}
-            births={births}
             setEvents={setEvents}
+            births={births}
             setBirths={setBirths}
+            setDate={setDate}
+            date={date}
           />
         </div>
-        <div>
+        {/* <div>
           <History />
-        </div>
+        </div> */}
       </section>
     </div>
   );

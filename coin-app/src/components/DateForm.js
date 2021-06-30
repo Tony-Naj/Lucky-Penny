@@ -6,11 +6,10 @@ import DatePage from "./DatePage";
 const initialFormValues = {
   day: "",
   month: "",
-  year: "",
 };
 
 function DateForm(props) {
-  const { events, births, setBirths, setEvents } = props;
+  const { setBirths, setEvents, setDate } = props;
 
   const [formValues, setFormValues] = useState(initialFormValues);
 
@@ -35,6 +34,8 @@ function DateForm(props) {
         const entries = Object.entries(res.data);
         setEvents(entries[2][1].Events);
         setBirths(entries[2][1].Births);
+        setDate(res.data.date);
+        console.log(res.data.date);
       })
       .catch((err) => {
         console.log(err);
@@ -49,6 +50,7 @@ function DateForm(props) {
     <div>
       <h3>Enter your Special Date</h3>
       <form onSubmit={handleSubmit}>
+        <label type="text">Choose a Day:</label>
         <input
           type="number"
           name="day"
@@ -80,14 +82,11 @@ function DateForm(props) {
           <option value="11" name="November"></option>
           <option value="12" name="December"></option>
         </datalist>
-
-        <label type="text">Choose a Year:</label>
-        <input type="text" name="year" list="daysofyear" id="year" />
-
+        {/* <label type="text">Choose a Year:</label>
+        <input type="text" name="year" list="daysofyear" id="year" /> */}
         <button type="submit" onSubmit={handleSubmit}>
           ENTER
         </button>
-        <DatePage events={events} births={births} />
       </form>
     </div>
   );

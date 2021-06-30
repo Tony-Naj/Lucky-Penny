@@ -1,14 +1,18 @@
 import React from "react";
 // import axios from "axios";
 import "./DatePage.css";
+import YearForm from "./YearForm";
 
 function DatePage(props) {
-  const { events, births } = props;
+  const { events, births, date, year, setYear } = props;
 
   return (
     <div>
+      <h2>{date}</h2>
+
       <div className="events">
         <h3>Events:</h3>
+        <h4>A list of events that happened on this date in history!</h4>
         <ul>
           {events.map((event) => (
             <li>
@@ -20,6 +24,7 @@ function DatePage(props) {
 
       <div className="births">
         <h3>Births:</h3>
+        <h4>These famous people were born on this day in history!</h4>
         <ul>
           {births.map((birth) => (
             <li>
@@ -27,6 +32,10 @@ function DatePage(props) {
             </li>
           ))}
         </ul>
+      </div>
+
+      <div>
+        <YearForm year={year} setYear={setYear} />
       </div>
     </div>
   );
