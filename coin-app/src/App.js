@@ -1,24 +1,29 @@
 import "./App.css";
 import React, { useState } from "react";
 import DatePage from "./components/DatePage";
-import DateForm from "./components/DateForm";
 import Header from "./Header";
-import History from "./components/History";
-import AccessForm from "./components/AccessForm";
 import HomePage from "./HomePage";
-import { Switch, Route, Link } from "react-router-dom";
+import { Route } from "react-router-dom";
 
 function App() {
+  const [events, setEvents] = useState([]);
+  const [births, setBirths] = useState([]);
+
   return (
     <div className="App">
       <Header />
 
       <Route exact path="/">
-        <HomePage />
+        <HomePage
+          events={events}
+          births={births}
+          setEvents={setEvents}
+          setBirths={setBirths}
+        />
       </Route>
 
       <Route path="/DatePage">
-        <DatePage />
+        <DatePage events={events} births={births} />
       </Route>
     </div>
   );

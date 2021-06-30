@@ -2,7 +2,9 @@ import React from "react";
 import DateForm from "./components/DateForm";
 import History from "./components/History";
 
-function HomePage() {
+function HomePage(props) {
+  const { events, setEvents, births, setBirths } = props;
+
   return (
     <div className="wrapper">
       <section className="section parallax bg1">
@@ -43,7 +45,12 @@ function HomePage() {
       </section>
       <section>
         <div>
-          <DateForm />
+          <DateForm
+            events={events}
+            births={births}
+            setEvents={setEvents}
+            setBirths={setBirths}
+          />
         </div>
         <div>
           <History />

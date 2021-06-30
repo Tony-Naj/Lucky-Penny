@@ -3,30 +3,30 @@ import React from "react";
 import "./DatePage.css";
 
 function DatePage(props) {
-  const { event, events } = props;
-  console.log("events:", event);
-  console.log("events:", events);
-  // console.log("event:", event.day);
-  // console.log("events:", event.text);
+  const { events, births } = props;
+
   return (
-    <div key={event} className="date-div">
+    <div>
       <div className="events">
-        {/* <h3>Events:</h3> */}
-
-        <p>
-          {event}: {event}
-        </p>
-
-        {/* <div className="births">
-          <h3>Births:</h3>
-          {births.map((item1, index1) => (
-            <div key={index1}>
-              <p>
-                {item1.year}: {item1.text}
-              </p>
-            </div>
+        <h3>Events:</h3>
+        <ul>
+          {events.map((event) => (
+            <li>
+              {event.year}: {event.text}
+            </li>
           ))}
-        </div> */}
+        </ul>
+      </div>
+
+      <div className="births">
+        <h3>Births:</h3>
+        <ul>
+          {births.map((birth) => (
+            <li>
+              {birth.year}: {birth.text}
+            </li>
+          ))}
+        </ul>
       </div>
     </div>
   );

@@ -9,26 +9,21 @@ const initialFormValues = {
   year: "",
 };
 
-function DateForm() {
-  const [day, setDay] = useState("");
-  const [month, setMonth] = useState("");
-  const [events, setEvents] = useState([]);
-  const [births, setBirths] = useState([]);
+function DateForm(props) {
+  const { events, births, setBirths, setEvents } = props;
+
   const [formValues, setFormValues] = useState(initialFormValues);
 
   const history = useHistory();
 
   const handleChange = (e) => {
     setFormValues({ ...formValues, [e.target.name]: e.target.value });
-    setDay(formValues.day);
-    setMonth(formValues.month);
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // console.log(formValues);
-    // history.push("/DatePage");
     fetchData();
+    history.push("/DatePage");
   };
 
   const fetchData = () => {
@@ -37,20 +32,9 @@ function DateForm() {
         `https://history.muffinlabs.com/date/${formValues.month}/${formValues.day}`
       )
       .then((res) => {
-        // const entries = res.data.entries
         const entries = Object.entries(res.data);
-        setMonth(setDay(setEvents(entries[2][1].Events)));
+        setEvents(entries[2][1].Events);
         setBirths(entries[2][1].Births);
-        console.log("data", res.data);
-        console.log("events", entries[2][1].Events);
-        console.log("births", entries[2][1].Births);
-        console.log("entry", entries);
-        console.log("date", res.data.date);
-        console.log("Events:", entries.date);
-        // console.log("events", res.data[2]);
-        // console.log("events", res.data[1]);
-        console.log("events", entries[2][1].Events);
-        // console.log("events", res.data[1][2]);
       })
       .catch((err) => {
         console.log(err);
@@ -98,25 +82,13 @@ function DateForm() {
         </datalist>
 
         <label type="text">Choose a Year:</label>
-        <input
-          type="text"
-          name="year"
-          list="daysofyear"
-          // value={formValues.month}
-          // onChange={handleChange}
-          id="year"
-        />
+        <input type="text" name="year" list="daysofyear" id="year" />
 
         <button type="submit" onSubmit={handleSubmit}>
           ENTER
         </button>
+        <DatePage events={events} births={births} />
       </form>
-
-      {events
-        .filter((event) => event.year)
-        .map((event) => (
-          <DatePage event={event} value={event.year} />
-        ))}
     </div>
   );
 }
