@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useHistory } from "react-router-dom";
 import axios from "axios";
-import DatePage from "./DatePage";
+// import DatePage from "./DatePage";
 
 const initialFormValues = {
   day: "",
@@ -53,6 +53,8 @@ function DateForm(props) {
         <label type="text">Choose a Day:</label>
         <input
           type="number"
+          min="0"
+          max="31"
           name="day"
           placeholder="Day"
           value={formValues.day}

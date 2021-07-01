@@ -5,51 +5,65 @@ const initialFormValues = {
   years: "",
 };
 
-function YearForm(props) {
-  const { year, setYear } = props;
+function YearForm() {
+  // const { year, setYear } = props;
+
   const [formValues, setFormValues] = useState(initialFormValues);
 
   const history = useHistory();
-  // let num = parseInt(formValues.year);
 
   const handleChange = (e) => {
     setFormValues({ ...formValues, [e.target.name]: e.target.value });
+    // setYear(formValues.years);
   };
-  console.log("year", year);
-  console.log("years", formValues.years);
+  console.log("year", formValues.years);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setYear(formValues.years);
-    sortByYear();
-    history.push("/History");
+    sortByYear(year);
   };
 
+  let year = formValues.years;
+
   const sortByYear = (year) => {
-    if (year === 1958) {
-      alert("this is it");
-      console.log("year", year);
-    } else if (year === NaN) {
-      alert("where my dogs at");
+    if (year === "1943") {
+      alert("Lincoln Steel Penny");
+    } else if (year >= "1859" && year < "1909") {
+      alert("Indian Head Penny");
+      history.push("/History");
+    } else if (year >= "1909" && year < "1958") {
+      alert("Lincoln Wheat Penny");
+    } else if (year >= "1959" && year < "2008") {
+      alert("Lincoln Memorial Penny");
+    } else if (year === "2009") {
+      alert("Lincoln BiCentennial Penny");
+    } else if (year >= "2010") {
+      alert("Lincoln Shield Penny");
     }
   };
+  //   else if (isNaN(year) === true) {
+  //     alert("where my dogs at");
+  //   } else {
+  //     history.push("/History")};
+  // };
 
   return (
     <div className="year-input">
       <h3>Enter your year to get your lucky penny!</h3>
       <form onSubmit={handleSubmit}>
         <input
-          type="integer"
-          name="year"
-          list="year"
+          type="number"
+          min="1"
+          max="2021"
+          name="years"
           placeholder="Choose your year"
-          value={formValues.year}
+          value={formValues.years}
           onChange={handleChange}
+          id="years"
         />
         <button type="submit">SUBMIT</button>
       </form>
     </div>
   );
 }
-
 export default YearForm;

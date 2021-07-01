@@ -10,7 +10,7 @@ function App() {
   const [events, setEvents] = useState([]);
   const [births, setBirths] = useState([]);
   const [date, setDate] = useState();
-  const [year, setYear] = useState();
+  // const [year, setYear] = useState()
 
   return (
     <div className="App">
@@ -32,13 +32,13 @@ function App() {
           events={events}
           births={births}
           date={date}
-          year={year}
-          setYear={setYear}
+          // year={year}
+          // setYear={setYear}
         />
       </Route>
 
       <Route path="/History">
-        <History year={year} />
+        <History /*year={year}*/ />
       </Route>
     </div>
   );
