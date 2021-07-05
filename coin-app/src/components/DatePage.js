@@ -1,10 +1,9 @@
 import React from "react";
-// import axios from "axios";
 import "./DatePage.css";
 import YearForm from "./YearForm";
 
 function DatePage(props) {
-  const { events, births, date, year, setYear } = props;
+  const { events, births, date } = props;
 
   return (
     <div>
@@ -35,7 +34,7 @@ function DatePage(props) {
       </div>
 
       <div>
-        <YearForm year={year} setYear={setYear} />
+        <YearForm />
       </div>
     </div>
   );

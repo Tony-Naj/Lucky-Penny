@@ -1,9 +1,8 @@
 import React from "react";
 import "./History.css";
+import OrderForm from "./CheckoutForm";
 
-function History(props) {
-  const { year } = props;
-
+function History() {
   return (
     <div className="history-div">
       <h1>History of the Penny</h1>
@@ -42,10 +41,10 @@ function History(props) {
         />
         {/* <img src="https://i.ibb.co/7YKP9Ns/12.webp" alt="12" border="0"/> */}
         <p>
-          A design lauded for simplicity, this penny depicts a Native-American
-          princess, now known as “Liberty”, on the front with an oak wreath on
-          the back of the coin. Because it was minted post Civil-War, many of
-          the nearly 2 billion put into production survive to this day.
+          The Lincoln cent was designed by famous Lithuanian-born sculptor and
+          engraver Victor David Brenner and initially commissioned to honor the
+          100th anniversary of President Lincoln's birth. The wheat stalk design
+          on the reverse of the coin symbolizes our nation's prosperity.
         </p>
       </section>
       <section id="lst" className="1943">
@@ -112,6 +111,9 @@ function History(props) {
           Union Shield which dates back to the 1780’s and was used widely during
           the Civil War.
         </p>
+      </section>
+      <section>
+        <OrderForm />
       </section>
     </div>
   );

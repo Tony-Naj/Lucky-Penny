@@ -52,7 +52,7 @@ function DateForm(props) {
       <form onSubmit={handleSubmit}>
         <label type="text">Choose a Day:</label>
         <input
-          type="number"
+          type="integer"
           min="0"
           max="31"
           name="day"
@@ -65,6 +65,7 @@ function DateForm(props) {
         <input
           type="text"
           name="month"
+          placeholder="Month"
           list="daysofmonth"
           value={formValues.month}
           onChange={handleChange}
@@ -84,8 +85,7 @@ function DateForm(props) {
           <option value="11" name="November"></option>
           <option value="12" name="December"></option>
         </datalist>
-        {/* <label type="text">Choose a Year:</label>
-        <input type="text" name="year" list="daysofyear" id="year" /> */}
+
         <button type="submit" onSubmit={handleSubmit}>
           ENTER
         </button>
