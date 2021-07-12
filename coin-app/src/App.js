@@ -4,13 +4,13 @@ import DatePage from "./components/DatePage";
 import Header from "./Header";
 import HomePage from "./HomePage";
 import History from "./components/History";
-import CheckoutForm from "./components/CheckoutForm";
+// import CheckoutForm from "./components/CheckoutForm";
 
 import { Route } from "react-router-dom";
-import { loadStripe } from "@stripe/stripe-js";
-import { Elements } from "@stripe/react-stripe-js";
+// import { loadStripe } from "@stripe/stripe-js";
+// import { Elements } from "@stripe/react-stripe-js";
 
-const promise = loadStripe("pk_test_TYooMQauvdEDq54NiTphI7jx");
+// const promise = loadStripe("pk_test_TYooMQauvdEDq54NiTphI7jx");
 
 function App() {
   const [events, setEvents] = useState([]);
@@ -40,9 +40,9 @@ function App() {
         <History />
       </Route>
 
-      <Elements stripe={promise}>
+      {/* <Elements stripe={promise}>
         <CheckoutForm />
-      </Elements>
+      </Elements> */}
     </div>
   );
 }

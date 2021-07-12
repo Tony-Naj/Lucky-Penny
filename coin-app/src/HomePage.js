@@ -1,25 +1,26 @@
 import React from "react";
 import DateForm from "./components/DateForm";
 import History from "./components/History";
+import "./HomePage.css";
 
 function HomePage(props) {
   const { events, setEvents, births, setBirths, date, setDate } = props;
 
   return (
-    <div>
-      <section>
-        <div>
+    <div className="home-div">
+      <section className="section">
+        <div className="lucky-div1">
           <h3>The Luck of The Penny</h3>
           <p>
             According to the book and the lore surrounding them, pennies are
             especially lucky when you find them face up, as that means that you
             have more money on the way. Finding a penny after rainfall could
-            mean that the pennies came from heaven or from the gods.{" "}
+            mean that the pennies came from heaven or from the gods.
           </p>
         </div>
       </section>
-      <section>
-        <div>
+      <section className="section2">
+        <div className="lucky-div2">
           <h3>Is Tails Up Unlucky?</h3>
           <p>
             Some people believe that picking up a penny that is tails up will
@@ -33,8 +34,8 @@ function HomePage(props) {
           </p>
         </div>
       </section>
-      <section>
-        <div>
+      <section className="section3">
+        <div className="lucky-div3">
           <p>
             According to the book and the lore surrounding them, pennies are
             especially lucky when you find them face up, as that means that you

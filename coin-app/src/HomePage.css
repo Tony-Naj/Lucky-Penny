@@ -1,0 +1,54 @@
+/* WHOLE PAGE CSS */
+
+.home-div {
+  height: 100vh;
+  width: 100%;
+  border: 2px solid red;
+  display: flex;
+  flex-direction: column;
+}
+
+/* TOP SECTION */
+
+.section1 {
+  display: flex;
+  border: 2px solid pink;
+}
+
+.lucky-div1 {
+  justify-content: center;
+  align-items: center;
+  margin-left: 12rem;
+  border: 2px solid blue;
+  height: 500px;
+  width: 700px;
+}
+
+/* MIDDLE-TOP SECTION */
+.section2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  border: 3px solid orange;
+}
+
+.lucky-div2 {
+  align-items: center;
+  border: 2px solid blue;
+  height: 500px;
+  width: 700px;
+  margin-right: 12rem;
+}
+
+/* MIDDLE-BOTTOM SECTION */
+.section3 {
+  border: 3px solid green;
+}
+
+.lucky-div3 {
+  justify-content: center;
+  align-items: center;
+  border: 2px solid blue;
+}
+
+/* DATE FORM SECTION */

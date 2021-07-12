@@ -19,7 +19,9 @@ const OrderForm = () => {
     setFormValues({ ...formValues, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = () => {};
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
 
   return (
     <div>
@@ -88,6 +90,7 @@ const OrderForm = () => {
           value={formValues.phone_number}
           onChange={handleChange}
         />
+        <input type="submit" />
       </form>
     </div>
   );

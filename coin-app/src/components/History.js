@@ -1,6 +1,6 @@
 import React from "react";
 import "./History.css";
-import OrderForm from "./CheckoutForm";
+import OrderForm from "./OrderForm";
 
 function History() {
   return (
@@ -113,7 +113,9 @@ function History() {
         </p>
       </section>
       <section>
-        <OrderForm />
+        <div>
+          <OrderForm />
+        </div>
       </section>
     </div>
   );

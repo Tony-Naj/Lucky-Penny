@@ -24,6 +24,7 @@ function DatePage(props) {
       <div className="births">
         <h3>Births:</h3>
         <h4>These famous people were born on this day in history!</h4>
+        {/* <h4>{`Did you know ${births[0].text} was born on this day in history! So were:`}</h4> */}
         <ul>
           {births.map((birth) => (
             <li>
