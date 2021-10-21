@@ -1,4 +1,5 @@
 import React from "react";
+import CoinFlip from "./components/CoinFlip";
 import DateForm from "./components/DateForm";
 import History from "./components/History";
 import "./HomePage.css";
@@ -8,6 +9,9 @@ function HomePage(props) {
 
   return (
     <div className="home-div">
+      <div className="flip">
+        <CoinFlip />
+      </div>
       <section className="section">
         <div className="lucky-div1">
           <h3>The Luck of The Penny</h3>

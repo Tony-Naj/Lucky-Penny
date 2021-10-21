@@ -1,11 +1,19 @@
 /* WHOLE PAGE CSS */
 
 .home-div {
-  height: 100vh;
-  width: 100%;
-  border: 2px solid red;
+  height: 100%;
+  width: 75%;
+  border: 4px solid #FF6961;
   display: flex;
   flex-direction: column;
+  background-color: #FFFDD1;
+  border-radius: 8px;
+  box-shadow:  10px -10px 20px gray
+}
+
+.flip {
+  background-color: black;
+  width: 100%
 }
 
 /* TOP SECTION */
