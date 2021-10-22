@@ -65,7 +65,7 @@ function History() {
       <section id="pennies">
         {pennies.map((penny) => {
           return (
-            <div className="penny-card">
+            <div className="penny-card" key={penny.id}>
               <h2>{penny.title}</h2>
               <img className="penny-img" src={penny.url} alt={penny.alt} />
               <p>{penny.info}</p>
