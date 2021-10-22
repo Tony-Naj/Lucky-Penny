@@ -10,7 +10,7 @@ const initialFormValues = {
 };
 
 function DateForm(props) {
-  const { setBirths, setEvents, setDate } = props;
+  const { births, setBirths, events, setEvents, date, setDate } = props;
 
   const [formValues, setFormValues] = useState(initialFormValues);
 
@@ -26,17 +26,18 @@ function DateForm(props) {
     history.push("/DatePage");
   };
 
-  const fetchData = () => {
-    axios
-      .get(
-        `https://history.muffinlabs.com/date/${formValues.month}/${formValues.day}`
-      )
+  let url = `https://history.muffinlabs.com/date/${formValues.month}/${formValues.day}`;
+  // let url = "https://history.muffinlabs.com/date/march/18";
+
+  const fetchData = async () => {
+    await axios
+      .get(url)
       .then((res) => {
         const entries = Object.entries(res.data);
         setEvents(entries[2][1].Events);
         setBirths(entries[2][1].Births);
         setDate(res.data.date);
-        console.log(res.data.date);
+        console.log(res.data);
       })
       .catch((err) => {
         console.log(err);
