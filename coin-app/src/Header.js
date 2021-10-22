@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 function Header() {
   return (
     <div className="header-div">
-      <div className="penny-backs">
+      {/* <div className="penny-backs">
         <img
           className="penny-pic"
           src="https://i.ibb.co/8YWnKZC/c-cn-1859-42487-lg.png"
@@ -24,7 +24,7 @@ function Header() {
           alt="d0ed91a6ddd47e4cbe2066bd0a0eed45"
           border="0"
         />
-      </div>
+      </div> */}
       <h1 className="app-title">LUCKY PENNY!</h1>
       <Link to="/">
         <button>Home Page</button>
@@ -32,7 +32,7 @@ function Header() {
       <Link to="/history">
         <button>History of the Penny</button>
       </Link>
-      <div className="penny-fronts">
+      {/* <div className="penny-fronts">
         <img
           className="penny-pic"
           src="https://i.ibb.co/4tfbRFQ/985d3.png"
@@ -45,7 +45,7 @@ function Header() {
           alt="985333"
           border="0"
         />
-      </div>
+      </div> */}
     </div>
   );
 }

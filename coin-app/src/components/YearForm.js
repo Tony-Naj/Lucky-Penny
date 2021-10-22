@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useHistory, useLocation } from "react-router";
+import "./YearForm.css";
 
 const initialFormValues = {
   years: "",
@@ -42,22 +43,31 @@ function YearForm() {
   };
 
   return (
-    <div className="year-input">
-      <h3>Enter your year to get your lucky penny!</h3>
-      <form onSubmit={handleSubmit}>
-        <input
-          type="integer"
-          min="1"
-          max="2021"
-          name="years"
-          placeholder="Choose your year"
-          value={formValues.years}
-          onChange={handleChange}
-          id="years"
+    <section className="form-section">
+      <div className="year-input">
+        <img
+          className="penny-pic"
+          src="https://i.ibb.co/CnDbH0c/d0ed91a6ddd47e4cbe2066bd0a0eed45.png"
+          alt="d0ed91a6ddd47e4cbe2066bd0a0eed45"
+          border="0"
         />
-        <button type="submit">SUBMIT</button>
-      </form>
-    </div>
+        <h3>Enter your lucky year to get your new penny!</h3>
+        <form className="year-form" onSubmit={handleSubmit}>
+          <input
+            className="input"
+            type="integer"
+            min="1"
+            max="2021"
+            name="years"
+            placeholder="Choose your year"
+            value={formValues.years}
+            onChange={handleChange}
+            id="years"
+          />
+          <button type="submit">GET LUCKY!</button>
+        </form>
+      </div>
+    </section>
   );
 }
 export default YearForm;

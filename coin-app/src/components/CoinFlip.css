@@ -1,7 +1,7 @@
 .flip {
     background-color: black;
     width: 100%;
-    height: 65vh;
+    height: 45vh;
 }
 .coin-flip{
     /* background-color: black; */
@@ -33,8 +33,8 @@
   }
   
   @keyframes fly {
-    0% { top: 70%; }
-    100% { top: 20%; }
+    0% { top: 40%; }
+    100% { top: 10%; }
   }
   
   @keyframes flip-head { 

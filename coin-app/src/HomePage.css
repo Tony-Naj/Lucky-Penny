@@ -1,12 +1,12 @@
 /* WHOLE PAGE CSS */
 
-.home-div {
+.home {
   height: 100%;
   width: 75%;
   border: 4px solid #FF6961;
   display: flex;
   flex-direction: column;
-  background-color: #FFFDD1;
+  background-color: #e6ded5;
   border-radius: 8px;
   box-shadow:  10px -10px 20px gray
 }
@@ -20,16 +20,17 @@
 
 .section1 {
   display: flex;
+  flex-direction: row;
+  justify-content: space-around;
   border: 2px solid pink;
 }
 
-.lucky-div1 {
+.lucky-div {
   justify-content: center;
   align-items: center;
-  margin-left: 12rem;
   border: 2px solid blue;
-  height: 500px;
-  width: 700px;
+  height: 300px;
+  width: 40%
 }
 
 /* MIDDLE-TOP SECTION */
@@ -41,19 +42,6 @@
 }
 
 .lucky-div2 {
-  align-items: center;
-  border: 2px solid blue;
-  height: 500px;
-  width: 700px;
-  margin-right: 12rem;
-}
-
-/* MIDDLE-BOTTOM SECTION */
-.section3 {
-  border: 3px solid green;
-}
-
-.lucky-div3 {
   justify-content: center;
   align-items: center;
   border: 2px solid blue;

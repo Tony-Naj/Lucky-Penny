@@ -8,23 +8,22 @@ function HomePage(props) {
   const { events, setEvents, births, setBirths, date, setDate } = props;
 
   return (
-    <div className="home-div">
+    <section className="home">
       <div className="flip">
         <CoinFlip />
       </div>
-      <section className="section">
-        <div className="lucky-div1">
+      <section className="section1">
+        <div className="lucky-div">
           <h3>The Luck of The Penny</h3>
           <p>
-            According to the book and the lore surrounding them, pennies are
+            According to the book and lore surrounding them, pennies are
             especially lucky when you find them face up, as that means that you
             have more money on the way. Finding a penny after rainfall could
             mean that the pennies came from heaven or from the gods.
           </p>
         </div>
-      </section>
-      <section className="section2">
-        <div className="lucky-div2">
+
+        <div className="lucky-div">
           <h3>Is Tails Up Unlucky?</h3>
           <p>
             Some people believe that picking up a penny that is tails up will
@@ -38,8 +37,8 @@ function HomePage(props) {
           </p>
         </div>
       </section>
-      <section className="section3">
-        <div className="lucky-div3">
+      <section className="section2">
+        <div className="lucky-div2">
           <p>
             According to the book and the lore surrounding them, pennies are
             especially lucky when you find them face up, as that means that you
@@ -63,7 +62,7 @@ function HomePage(props) {
           <History />
         </div> */}
       </section>
-    </div>
+    </section>
   );
 }
 
