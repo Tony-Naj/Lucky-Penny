@@ -18,7 +18,7 @@ const pennies = [
     info: "The Lincoln cent was designed by famous Lithuanian-born sculptor and engraver Victor David Brenner and initially commissioned to honor the 100th anniversary of President Lincoln's birth. The wheat stalk design on the reverse of the coin symbolizes our nation's prosperity.",
   },
   {
-    id: "lincloln-steel",
+    id: "lincoln-steel",
     title: "Lincoln Steel Cent (1943)",
     url: "https://i.ibb.co/KyBtKMP/lincoln-wheat-cent-steel.jpg",
     alt: "lincoln-wheat-cent-steel",
