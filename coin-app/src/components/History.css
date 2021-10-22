@@ -1,15 +1,47 @@
-.history-div {
+#history {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+}
+
+#pennies {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.history-penny {
-    height: 240px;
-    width: 475px;
+.history-intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
 }
 
-.history-memorial {
-    height: 280px;
+.history-title {
+    font-size: 4rem;
+}
+
+.history-text {
+}
+
+.penny-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 60%;
+    padding-left: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid black;
+}
+
+.penny-img {
+    height: 240px;
+    width: 475px;
 }

@@ -1,0 +1,31 @@
+#order-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    /* border: 4px solid black */
+}
+
+.order-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 4px solid black; */
+}
+
+.order-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid black;
+    height: 45rem;
+    width: 40%;
+}
+
+input {
+    /* padding: 10px; */
+    margin: 10px;
+}

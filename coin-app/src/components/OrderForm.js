@@ -24,75 +24,83 @@ const OrderForm = () => {
   };
 
   return (
-    <div>
-      <form onSubmit={handleSubmit}>
-        <label>First Name</label>
-        <input
-          type="text"
-          name="firstName"
-          placeholder="first name"
-          value={formValues.name_first}
-          onChange={handleChange}
+    <section id="order-section">
+      <div className="order-div">
+        <img
+          className="penny-pic"
+          src="https://i.ibb.co/CnDbH0c/d0ed91a6ddd47e4cbe2066bd0a0eed45.png"
+          alt="d0ed91a6ddd47e4cbe2066bd0a0eed45"
+          border="0"
         />
-        <label>Last Name</label>
-        <input
-          type="text"
-          name="lastName"
-          placeholder="last name"
-          value={formValues.name_last}
-          onChange={handleChange}
-        />
-        <label>Email</label>
-        <input
-          type="email"
-          name="email"
-          placeholder="email"
-          value={formValues.email}
-          onChange={handleChange}
-        />
-        <label>Street Address</label>
-        <input
-          type="text"
-          name="streetAddress"
-          placeholder="street address"
-          value={formValues.street_address}
-          onChange={handleChange}
-        />
-        <label>City</label>
-        <input
-          type="text"
-          name="city"
-          placeholder="city"
-          value={formValues.city}
-          onChange={handleChange}
-        />
-        <label>State</label>
-        <input
-          type="text"
-          name="state"
-          placeholder="state"
-          value={formValues.state}
-          onChange={handleChange}
-        />
-        <label>Zip Code</label>
-        <input
-          type="text"
-          name="zip"
-          placeholder="zip code"
-          value={formValues.zip_code}
-          onChange={handleChange}
-        />
-        <label>Telephone</label>
-        <input
-          type="tel"
-          name="telephone"
-          placeholder="phone number"
-          value={formValues.phone_number}
-          onChange={handleChange}
-        />
-        <input type="submit" />
-      </form>
-    </div>
+        <form className="order-form" onSubmit={handleSubmit}>
+          <label>First Name</label>
+          <input
+            type="text"
+            name="firstName"
+            placeholder="first name"
+            value={formValues.name_first}
+            onChange={handleChange}
+          />
+          <label>Last Name</label>
+          <input
+            type="text"
+            name="lastName"
+            placeholder="last name"
+            value={formValues.name_last}
+            onChange={handleChange}
+          />
+          <label>Email</label>
+          <input
+            type="email"
+            name="email"
+            placeholder="email"
+            value={formValues.email}
+            onChange={handleChange}
+          />
+          <label>Street Address</label>
+          <input
+            type="text"
+            name="streetAddress"
+            placeholder="street address"
+            value={formValues.street_address}
+            onChange={handleChange}
+          />
+          <label>City</label>
+          <input
+            type="text"
+            name="city"
+            placeholder="city"
+            value={formValues.city}
+            onChange={handleChange}
+          />
+          <label>State</label>
+          <input
+            type="text"
+            name="state"
+            placeholder="state"
+            value={formValues.state}
+            onChange={handleChange}
+          />
+          <label>Zip Code</label>
+          <input
+            type="text"
+            name="zip"
+            placeholder="zip code"
+            value={formValues.zip_code}
+            onChange={handleChange}
+          />
+          <label>Telephone</label>
+          <input
+            type="tel"
+            name="telephone"
+            placeholder="phone number"
+            value={formValues.phone_number}
+            onChange={handleChange}
+          />
+          <input type="submit" />
+        </form>
+      </div>
+    </section>
   );
 };
 
