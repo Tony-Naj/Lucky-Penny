@@ -1,6 +1,7 @@
 import React from "react";
 import "./Header.css";
 import { Link } from "react-router-dom";
+import coin1 from "./coin.png";
 
 function Header() {
   return (
@@ -25,13 +26,18 @@ function Header() {
           border="0"
         />
       </div> */}
-      <h1 className="app-title">LUCKY PENNY!</h1>
-      <Link to="/">
-        <button>Home Page</button>
-      </Link>
-      <Link to="/history">
-        <button>History of the Penny</button>
-      </Link>
+      <div className="logo-div">
+        <img src={coin1} alt="gold coin" className="coin-logo" />
+      </div>
+      {/* <h1 className="app-title">LUCKY PENNY!</h1> */}
+      <div className="links-div">
+        <Link to="/" className="link">
+          <button>Home Page</button>
+        </Link>
+        <Link to="/history" className="link">
+          <button>History of the Penny</button>
+        </Link>
+      </div>
       {/* <div className="penny-fronts">
         <img
           className="penny-pic"

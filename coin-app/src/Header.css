@@ -1,22 +1,42 @@
 .header-div {
-    border: 4px solid black;
-    height: 4rem;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+  border: 4px solid black;
+  height: 4rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.penny-pic {
-    height: 8rem;
-    /* width: 17px; */
+.logo-div {
+  background-color: red;
+  display: flex;
+  justify-content: flex-start;
+}
+.coin-logo {
+  height: 3rem;
+  /* margin-left: -50rem; */
+  width: 3rem;
+}
+
+.links-div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.link {
+  display: flex;
+  flex-direction: column;
+}
+
+/* .penny-pic {
+  height: 8rem;
+  width: 17px;
 }
 
 .penny-backs {
-    display: flex;
-    /* padding: 1rem; */
-    flex-direction: row;
-    justify-content: space-around;
-
-}
+  display: flex;
+  padding: 1rem;
+  flex-direction: row;
+  justify-content: space-around;
+}  */
