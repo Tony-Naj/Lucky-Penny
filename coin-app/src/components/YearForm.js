@@ -15,13 +15,11 @@ function YearForm() {
   const handleChange = (e) => {
     setFormValues({ ...formValues, [e.target.name]: e.target.value });
   };
-  console.log("year", "formValues.years");
+  console.log("year", formValues.years);
 
   const handleSubmit = (e) => {
     e.preventDefault();
     sortByYear(year);
-    history.push("/History");
-    // history.location.pathname("/History/?id:ls");
   };
 
   let year = formValues.years;
@@ -29,16 +27,22 @@ function YearForm() {
   const sortByYear = (year) => {
     if (year === "1943") {
       alert("Lincoln Steel Penny");
+      history.push("/Steel");
     } else if (year >= "1859" && year < "1909") {
       alert("Indian Head Penny");
+      history.push("/Indian");
     } else if (year >= "1909" && year < "1958") {
       alert("Lincoln Wheat Penny");
+      history.push("/Wheat");
     } else if (year >= "1959" && year < "2008") {
       alert("Lincoln Memorial Penny");
+      history.push("/Memorial");
     } else if (year === "2009") {
       alert("Lincoln BiCentennial Penny");
+      history.push("/BiCentennial");
     } else if (year >= "2010") {
       alert("Lincoln Shield Penny");
+      history.push("/Shield");
     }
   };
 

@@ -73,11 +73,6 @@ function History() {
           );
         })}
       </section>
-      <section>
-        <div>
-          <OrderForm />
-        </div>
-      </section>
     </section>
   );
 }
