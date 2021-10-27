@@ -15,7 +15,7 @@ function YearForm() {
   const handleChange = (e) => {
     setFormValues({ ...formValues, [e.target.name]: e.target.value });
   };
-  console.log("year", formValues.years);
+  console.log("year", "formValues.years");
 
   const handleSubmit = (e) => {
     e.preventDefault();
