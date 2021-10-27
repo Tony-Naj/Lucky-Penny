@@ -13,6 +13,7 @@ import Wheat from "./components/years/Wheat";
 import Memorial from "./components/years/Memorial";
 import Bicentennial from "./components/years/Bicentennial";
 import Shield from "./components/years/Shield";
+import Confirmation from "./components/Confirmation";
 // import { loadStripe } from "@stripe/stripe-js";
 // import { Elements } from "@stripe/react-stripe-js";
 
@@ -68,6 +69,10 @@ function App() {
 
       <Route path="/Shield">
         <Shield />
+      </Route>
+
+      <Route path="/Confirmation">
+        <Confirmation />
       </Route>
 
       {/* <Elements stripe={promise}>

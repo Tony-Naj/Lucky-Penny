@@ -27,12 +27,10 @@ function DateForm(props) {
   };
 
   // let url = "https://history.muffinlabs.com/date/march/18";
-
+  let url = `https://history.muffinlabs.com/date/${formValues.month}/${formValues.day}`;
   const fetchData = async () => {
     await axios
-      .get(
-        `https://history.muffinlabs.com/date/${formValues.month}/${formValues.day}`
-      )
+      .get(url)
       .then((res) => {
         const entries = Object.entries(res.data);
         setEvents(entries[2][1].Events);

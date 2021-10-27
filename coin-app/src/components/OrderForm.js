@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useHistory } from "react-router";
 import "./OrderForm.css";
 
 const initialFormValues = {
@@ -15,12 +16,15 @@ const initialFormValues = {
 const OrderForm = () => {
   const [formValues, setFormValues] = useState(initialFormValues);
 
+  const history = useHistory();
+
   const handleChange = (e) => {
     setFormValues({ ...formValues, [e.target.name]: e.target.value });
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    history.push("/Confirmation");
   };
 
   return (
