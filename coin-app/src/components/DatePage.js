@@ -29,7 +29,7 @@ function DatePage(props) {
 
         <div className="births">
           <h3 className="births-h3">
-            {`These renowned people were born on ${date}:`}
+            {`These people of renown were born on ${date}:`}
             {/* <h3 className="births-h3">{`Did you know 
             ${
               births[births.length - 1].text

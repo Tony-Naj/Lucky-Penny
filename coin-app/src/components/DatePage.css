@@ -17,49 +17,9 @@ li {
   /* border: 2px solid blue; */
 }
 
-/* CONTAINER DIV */
-.info {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 80vh;
-  /* border: 1px solid green; */
-}
-
-/* EVENTS DIV */
-.events {
-  /* display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap; */
-  border: 1px solid black;
-  box-shadow: 2px -2px 8px grey;
-  height: 85%;
-  overflow-y: scroll;
-  width: 40%;
-}
-
-.events-h3 {
-  font-size: 1.6rem;
-  padding-left: 1rem;
-}
-
-/* BIRTHS DIV */
-.births {
-  border: 1px solid black;
-  box-shadow: 2px -2px 8px grey;
-  height: 85%;
-  overflow-y: scroll;
-  width: 40%;
-}
-
-.births-h3 {
-  font-size: 1.6rem;
-  padding-left: 1rem;
-}
-
-body {
-  perspective: 500px;
-}
+/* body {
+    perspective: 500px;
+  } */
 .spinner {
   font-size: 3rem;
   text-shadow: 1px -2px 4px grey;
@@ -93,4 +53,47 @@ body {
   100% {
     text-shadow: 0 0 grey;
   }
+}
+/* CONTAINER DIV */
+.info {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 80vh;
+  /* border: 1px solid green; */
+}
+
+/* EVENTS DIV */
+.events {
+  /* display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap; */
+  border: 1px solid black;
+  border-radius: 4px;
+  box-shadow: 2px -2px 8px grey;
+  height: 85%;
+  overflow-y: scroll;
+  width: 40%;
+}
+
+.events-h3 {
+  text-align: center;
+  font-size: 1.6rem;
+  padding-left: 1rem;
+}
+
+/* BIRTHS DIV */
+.births {
+  border: 1px solid black;
+  border-radius: 4px;
+  box-shadow: 2px -2px 8px grey;
+  height: 85%;
+  overflow-y: scroll;
+  width: 40%;
+}
+
+.births-h3 {
+  text-align: center;
+  font-size: 1.6rem;
+  padding-left: 1rem;
 }
