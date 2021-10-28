@@ -6,17 +6,18 @@ function DatePage(props) {
   const { events, births, date } = props;
 
   return (
-    <section className="dates">
+    <section id="date-data">
       <div className="date-title">
-        <h1 className="date">{date}</h1>
+        <h1 className="spinner">{date}</h1>
       </div>
       <div className="info">
         <div className="events">
-          {/* <h4>A list of events that happened on this date in history!</h4> */}
-          {/* <h4>{`Did you know on ${date}, ${
+          <h3 className="events-h3">
+            {`These historic moments happened on ${date}:`}
+            {/* {`On ${date}, ${
             events[events.length - 1].text
-          }. Here are some more events that took place on this date:`}</h4> */}
-          {/* <h4>{`Did you know ${events[0].text} was born on this day in history! So were:`}</h4> */}
+          } Here are some more events that took place on ${date}:`} */}
+          </h3>
           <ul>
             {events.map((event) => (
               <li>
@@ -27,12 +28,13 @@ function DatePage(props) {
         </div>
 
         <div className="births">
-          {/* <h3>Births:</h3> */}
-          <h4>{`on ${date} these famous people were born on this day in history!`}</h4>
-          {/* <h4>{`Did you know on
+          <h3 className="births-h3">
+            {`These renowned people were born on ${date}:`}
+            {/* <h3 className="births-h3">{`Did you know 
             ${
               births[births.length - 1].text
-            } was born on ${date}! So were:`}</h4> */}
+            } was born on ${date}? Here are more notable births:`}</h3> */}
+          </h3>
           <ul>
             {births.map((birth) => (
               <li>
