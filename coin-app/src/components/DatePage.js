@@ -20,7 +20,7 @@ function DatePage(props) {
           <ul>
             {events.map((event) => (
               <li>
-                {event.year}: {event.text}
+                <strong>{event.year}:</strong> {event.text}
               </li>
             ))}
           </ul>
@@ -36,7 +36,7 @@ function DatePage(props) {
           <ul>
             {births.map((birth) => (
               <li>
-                {birth.year}: {birth.text}
+                <strong>{birth.year}:</strong> {birth.text}
               </li>
             ))}
           </ul>
