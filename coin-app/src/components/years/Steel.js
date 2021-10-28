@@ -4,11 +4,11 @@ import OrderForm from "../OrderForm";
 function year1943() {
   const pennies = [
     {
-      id: "lincoln-wheat",
-      title: "Lincoln Wheat Cent (1909-1958)",
-      url: "https://i.ibb.co/JncSRSc/1937-Wheat-Penny-Front-Back.jpg",
-      alt: "1937-Wheat-Penny-Front-Back",
-      info: "The Lincoln cent was designed by famous Lithuanian-born sculptor and engraver Victor David Brenner and initially commissioned to honor the 100th anniversary of President Lincoln's birth. The wheat stalk design on the reverse of the coin symbolizes our nation's prosperity.",
+      id: "lincloln-steel",
+      title: "Lincoln Steel Cent (1943)",
+      url: "https://i.ibb.co/KyBtKMP/lincoln-wheat-cent-steel.jpg",
+      alt: "lincoln-wheat-cent-steel",
+      info: "Nicknamed “steelies”, these pennies are the only US coin that contains 0% copper and can be picked up with a magnet. The steel composition of these cent pieces is owed to the overwhelming need for copper during World War II.",
     },
   ];
   return (
