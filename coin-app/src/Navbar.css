@@ -1,0 +1,21 @@
+.navbar-div {
+  border: 4px solid black;
+  height: 4rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.penny-pic {
+  height: 8rem;
+  /* width: 17px; */
+}
+
+.penny-backs {
+  display: flex;
+  /* padding: 1rem; */
+  flex-direction: row;
+  justify-content: space-around;
+}

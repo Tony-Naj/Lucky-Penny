@@ -1,10 +1,10 @@
 import React from "react";
-import "./Header.css";
+import "./Navbar.css";
 import { Link } from "react-router-dom";
 
-function Header() {
+function Navbar() {
   return (
-    <div className="header-div">
+    <div className="navbar-div">
       {/* <div className="penny-backs">
         <img
           className="penny-pic"
@@ -50,4 +50,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default Navbar;

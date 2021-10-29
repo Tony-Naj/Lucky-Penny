@@ -1,7 +1,7 @@
 import "./App.css";
 import React, { useState } from "react";
 import DatePage from "./components/DatePage";
-import Header from "./Header";
+import Navbar from "./Navbar";
 import HomePage from "./HomePage";
 import History from "./components/History";
 // import CheckoutForm from "./components/CheckoutForm";
@@ -26,7 +26,7 @@ function App() {
 
   return (
     <div className="App">
-      <Header />
+      <Navbar />
 
       <Route exact path="/">
         <HomePage
