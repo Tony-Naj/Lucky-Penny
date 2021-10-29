@@ -35,5 +35,5 @@ button {
 }
 
 button:hover {
-  background-color: purple;
+  background-color: rgba(87, 128, 0, 0.259);
 }
