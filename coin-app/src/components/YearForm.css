@@ -27,7 +27,8 @@
 }
 
 .input-box {
-  margin-top: -0.3rem;
+  margin-top: 1.4rem;
+  margin-bottom: 1rem;
 }
 
 button {
@@ -54,7 +55,6 @@ button {
 .coin .front {
   width: 100%;
   height: 100%;
-
   border-radius: 50%;
   position: absolute;
   top: 0;
@@ -200,6 +200,11 @@ button {
 
 /* Small devices (Mobile, Landscape, less than 768px) */
 @media (max-width: 767.98px) {
+  .year-input {
+    border: 2px solid black;
+    box-shadow: 2px -2px 4px grey;
+    width: 80%;
+  }
 }
 
 /* Medium devices (tablets, less than 992px) */

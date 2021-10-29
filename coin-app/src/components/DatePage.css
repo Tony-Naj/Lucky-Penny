@@ -136,6 +136,37 @@ li {
 
 /* Small devices (Mobile, Landscape, less than 768px) */
 @media (max-width: 767.98px) {
+  /* CONTAINER DIV */
+  .info {
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+  }
+  /* EVENTS DIV */
+  .events {
+    width: 90%;
+    margin-bottom: 1rem;
+  }
+
+  .events-h3 {
+    font-size: 1.2rem;
+    margin-bottom: -0.2rem;
+  }
+
+  /* BIRTHS DIV */
+  .births {
+    width: 90%;
+  }
+
+  .births-h3 {
+    font-size: 1.2rem;
+  }
+
+  /* List Items */
+  .list {
+    font-size: 0.7rem;
+    margin-bottom: 0.2rem;
+  }
 }
 
 /* Medium devices (tablets, less than 992px) */

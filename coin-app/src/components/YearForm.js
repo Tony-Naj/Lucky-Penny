@@ -69,7 +69,7 @@ function YearForm() {
           border="0"
         /> */}
         <form className="year-form" onSubmit={handleSubmit}>
-          <h3>What's your lucky year?</h3>
+          {/* <h3>What's your lucky year?</h3> */}
           <input
             className="input-box"
             type="integer"
