@@ -56,12 +56,18 @@ function YearForm() {
     <section id="form-section">
       <div className="year-input">
         <h2>Get your new penny!</h2>
-        <img
+        <div className="coin">
+          <div className="front"></div>
+          <div className="front_b"></div>
+          <div className="back"></div>
+          <div className="back_b"></div>
+        </div>
+        {/* <img
           className="penny-pic"
           src="https://i.ibb.co/CnDbH0c/d0ed91a6ddd47e4cbe2066bd0a0eed45.png"
           alt="d0ed91a6ddd47e4cbe2066bd0a0eed45"
           border="0"
-        />
+        /> */}
         <form className="year-form" onSubmit={handleSubmit}>
           <h3>What's your lucky year?</h3>
           <input
