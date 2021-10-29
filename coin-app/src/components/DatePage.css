@@ -4,7 +4,7 @@
 }
 
 li {
-  padding: 4px;
+  padding: 4px 8px 4px 0px;
 }
 /* ****************************************** */
 
@@ -14,7 +14,6 @@ li {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  /* border: 2px solid blue; */
 }
 
 .spinner {
@@ -99,36 +98,17 @@ li {
 
 /* Small Devices (Mobile, Portrait, less than 576px) */
 @media (max-width: 575.98px) {
-  /* CONTAINER DIV */
-  .info {
-    flex-direction: column;
-    justify-content: space-between;
-    padding-bottom: 1rem;
-  }
-  /* EVENTS DIV */
-  .events {
-    width: 90%;
-    margin-bottom: 1rem;
-  }
-
   .events-h3 {
     font-size: 1rem;
     margin-bottom: -0.2rem;
-  }
-
-  /* BIRTHS DIV */
-  .births {
-    width: 90%;
   }
 
   .births-h3 {
     font-size: 1rem;
   }
 
-  /* List Items */
   .list {
     font-size: 0.6rem;
-    margin-bottom: 0.2rem;
   }
 }
 
@@ -136,6 +116,22 @@ li {
 
 /* Small devices (Mobile, Landscape, less than 768px) */
 @media (max-width: 767.98px) {
+  .events-h3 {
+    font-size: 1.2rem;
+    margin-bottom: -0.2rem;
+  }
+
+  .births-h3 {
+    font-size: 1.2rem;
+  }
+
+  .list {
+    font-size: 0.7rem;
+  }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
   /* CONTAINER DIV */
   .info {
     flex-direction: column;
@@ -149,7 +145,7 @@ li {
   }
 
   .events-h3 {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     margin-bottom: -0.2rem;
   }
 
@@ -159,18 +155,14 @@ li {
   }
 
   .births-h3 {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
 
   /* List Items */
   .list {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
     margin-bottom: 0.2rem;
   }
-}
-
-/* Medium devices (tablets, less than 992px) */
-@media (max-width: 991.98px) {
 }
 
 /* Large devices (laptops, less than 1440px) */
