@@ -8,14 +8,32 @@
   align-items: center;
 }
 
-.penny-pic {
-  height: 8rem;
-  /* width: 17px; */
+.coin-container {
+  padding: 0.5rem;
 }
 
-.penny-backs {
+.nav-coin {
+  height: 50%;
+  width: 50%;
+  margin-right: 2rem;
+}
+
+.app-title {
+  margin-right: 2rem;
+}
+.nav-buttons {
+  /* width: 50%; */
   display: flex;
-  /* padding: 1rem; */
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: flex-end;
+  align-items: flex-end;
+  /* margin-left: 20rem; */
+}
+
+button {
+  margin-right: 2rem;
+}
+
+button:hover {
+  background-color: purple;
 }
