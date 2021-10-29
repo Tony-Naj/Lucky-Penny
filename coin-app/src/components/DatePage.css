@@ -17,9 +17,6 @@ li {
   /* border: 2px solid blue; */
 }
 
-/* body {
-    perspective: 500px;
-  } */
 .spinner {
   font-size: 3rem;
   text-shadow: 1px -2px 4px grey;
@@ -65,9 +62,9 @@ li {
 
 /* EVENTS DIV */
 .events {
-  /* display: flex;
+  display: flex;
   flex-direction: column;
-  flex-wrap: nowrap; */
+  flex-wrap: nowrap;
   border: 1px solid black;
   border-radius: 4px;
   box-shadow: 2px -2px 8px grey;
@@ -96,4 +93,59 @@ li {
   text-align: center;
   font-size: 1.6rem;
   padding-left: 1rem;
+}
+
+/* MEDIA QUERIES */
+
+/* Small Devices (Mobile, Portrait, less than 576px) */
+@media (max-width: 575.98px) {
+  /* CONTAINER DIV */
+  .info {
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+  }
+  /* EVENTS DIV */
+  .events {
+    width: 90%;
+    margin-bottom: 1rem;
+  }
+
+  .events-h3 {
+    font-size: 1rem;
+    margin-bottom: -0.2rem;
+  }
+
+  /* BIRTHS DIV */
+  .births {
+    width: 90%;
+  }
+
+  .births-h3 {
+    font-size: 1rem;
+  }
+
+  /* List Items */
+  .list {
+    font-size: 0.6rem;
+    margin-bottom: 0.2rem;
+  }
+}
+
+/* ************************************************* */
+
+/* Small devices (Mobile, Landscape, less than 768px) */
+@media (max-width: 767.98px) {
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+}
+
+/* Large devices (laptops, less than 1440px) */
+@media (max-width: 1439.98px) {
+}
+
+/* Extra large devices (desktops, less than 1920px) */
+@media (max-width: 1919.98px) {
 }
