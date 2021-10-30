@@ -12,42 +12,57 @@ function HomePage(props) {
       <div className="flip">
         <CoinFlip />
       </div>
+      <div className="quote-div">
+        <h3 className="shimmer">
+          “Find a penny, pick it up. All day long you’ll have good luck.”
+        </h3>
+      </div>
       <section className="section1">
         <div className="lucky-div">
-          <h3>The Luck of The Penny</h3>
+          <h3>Lucky Penny Lore</h3>
           <p>
-            According to the book and lore surrounding them, pennies are
-            especially lucky when you find them face up, as that means that you
-            have more money on the way. Finding a penny after rainfall could
-            mean that the pennies came from heaven or from the gods.
+            Well, according to one theory, people originally believed that
+            pennies would bring them a lot of luck due to their religious
+            beliefs. Ancient civilizations believed that copper and other metals
+            were gifts from the gods, which were intended to provide people with
+            protection from evil. This theory was also fueled by a number of
+            other superstitions, such as metal horseshoes and charm bracelets,
+            which people also believed to be lucky.
           </p>
         </div>
 
         <div className="lucky-div">
-          <h3>Is Tails Up Unlucky?</h3>
+          <h3>Lucky Penny Lore</h3>
           <p>
-            Some people believe that picking up a penny that is tails up will
-            bring you bad luck, and only the face side of the coin is lucky.
-            Rather than take the tails-up penny and risk whatever ill fortune
-            that may bring, there’s a salt-over-the-shoulder way of dealing with
-            it. The traditional way of dealing with it is to lean down and turn
-            the penny over so the head is facing up, but then to leave it so the
-            good luck of the face-up penny can be bestowed upon the next
-            passerby.
+            Another reason people might have claimed pennies would bring good
+            luck comes down to the battle between good and evil, which is like
+            two sides of the coin. Finding a penny heads up meant you’d have
+            luck on your side, but tails up would mean the opposite, although
+            the exact reasoning for this is unknown. Some people say that if you
+            find a penny tails up, you should flip it over to make it heads up
+            so that it can bring luck to whoever finds it next.
           </p>
         </div>
       </section>
       <section className="section2">
         <div className="lucky-div2">
           <p>
-            According to the book and the lore surrounding them, pennies are
-            especially lucky when you find them face up, as that means that you
-            have more money on the way. Finding a penny after rainfall could
-            mean that the pennies came from heaven or from the gods.
+            Some people say that if you find a penny and it is tails side up,
+            you should flip it the other way round and leave it so that it
+            brings the next person that finds it luck.
+          </p>
+          <p>
+            Luck is a strange thing that we believe in. Its existence is
+            completely abstract but we can feel it working around us every day.
+            It's been stated that you can find a "super lucky penny," which is
+            when the date stamped on a penny you find on the street matches your
+            year of birth, or an important year in your life. Let's find YOUR
+            super lucky penny! Begin by entering a special date that has
+            importance to you!
           </p>
         </div>
       </section>
-      <section>
+      <section id="dateform">
         <div>
           <DateForm
             events={events}
