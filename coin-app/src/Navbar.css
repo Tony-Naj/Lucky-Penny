@@ -37,3 +37,13 @@ button {
 button:hover {
   background-color: rgba(87, 128, 0, 0.259);
 }
+
+@media (max-width: 500px) {
+  .nav-coin {
+    display: none;
+  }
+
+  .app-title {
+    font-size: 1rem;
+  }
+}

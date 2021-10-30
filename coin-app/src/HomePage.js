@@ -47,9 +47,10 @@ function HomePage(props) {
       <section className="section2">
         <div className="lucky-div2">
           <p>
-            Some people say that if you find a penny and it is tails side up,
-            you should flip it the other way round and leave it so that it
-            brings the next person that finds it luck.
+            There are those who feel that these random pennies are actually
+            placed there for us to find by loved ones who’ve passed. They
+            believe our deceased loved ones are giving us a sign to let us know
+            they are okay.
           </p>
           <p>
             Luck is a strange thing that we believe in. Its existence is
