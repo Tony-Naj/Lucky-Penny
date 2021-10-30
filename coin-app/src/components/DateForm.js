@@ -49,13 +49,14 @@ function DateForm(props) {
   return (
     <section className="form-section">
       <div className="date-div">
-        <img
-          className="penny-pic"
-          src="https://i.ibb.co/CnDbH0c/d0ed91a6ddd47e4cbe2066bd0a0eed45.png"
-          alt="d0ed91a6ddd47e4cbe2066bd0a0eed45"
-          border="0"
-        />
         <h3>Enter your Special Date</h3>
+        <div className="coin">
+          <div className="front"></div>
+          <div className="front_b"></div>
+          <div className="back"></div>
+          <div className="back_b"></div>
+        </div>
+
         <form className="date-form" onSubmit={handleSubmit}>
           <label type="text">Choose a Day:</label>
           <input
