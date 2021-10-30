@@ -17,6 +17,9 @@ function Navbar() {
         <Link to="/history">
           <button>History</button>
         </Link>
+        <Link to="/superstitions">
+          <button>Superstitions</button>
+        </Link>
       </div>
     </div>
   );

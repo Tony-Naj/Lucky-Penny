@@ -14,6 +14,7 @@ import Memorial from "./components/years/Memorial";
 import Bicentennial from "./components/years/Bicentennial";
 import Shield from "./components/years/Shield";
 import Confirmation from "./components/Confirmation";
+import Superstitions from "./components/Superstitions";
 // import { loadStripe } from "@stripe/stripe-js";
 // import { Elements } from "@stripe/react-stripe-js";
 
@@ -47,6 +48,9 @@ function App() {
         <History />
       </Route>
 
+      <Route path="/Superstitions">
+        <Superstitions />
+      </Route>
       <Route path="/Steel">
         <Steel />
       </Route>
