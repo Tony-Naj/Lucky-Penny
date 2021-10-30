@@ -19,6 +19,7 @@ function Indian() {
             <h2>{penny.title}</h2>
             <img className="penny-img" src={penny.url} alt={penny.alt} />
             <p>{penny.info}</p>
+            <p></p>
           </div>
         );
       })}
