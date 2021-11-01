@@ -22,7 +22,7 @@
     backface-visibility: hidden;
     position: absolute;
     top: 0;
-    left: 0;
+    right: 0;
   }
   
   .coin-heads{
@@ -33,7 +33,7 @@
   }
   
   @keyframes fly {
-    0% { top: 40%; }
+    0% { top: 70%; }
     100% { top: 10%; }
   }
   
@@ -55,4 +55,9 @@
     width: 100%;
     height: auto;
     border: 1px solid black;
+  }
+
+  .shimmer {
+    font-family: "Money Money Plus";
+    color: aqua;
   }

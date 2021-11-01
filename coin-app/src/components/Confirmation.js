@@ -9,6 +9,16 @@ function Confirmation() {
         <h4>Good luck is on the wind!</h4>
         <p>Your Super Lucky Penny will arrive in 7-10 days.</p>
       </div>
+      <section id="copyright">
+        <div className="c-div">
+          <img
+            className="copy-img"
+            src="https://i.ibb.co/vchsJQ0/Untitled.png"
+            alt="spin"
+          />
+        </div>
+        <p>Copyright © 2021 | Anthony Cortese | Onaje Ooladuwa </p>
+      </section>
     </section>
   );
 }

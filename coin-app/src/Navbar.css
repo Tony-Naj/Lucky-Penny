@@ -1,3 +1,8 @@
+@import url(//db.onlinewebfonts.com/c/ba9019aa1b39b36ff007750ecf8296bf?family=LibertyW01-SC);
+@import url(//db.onlinewebfonts.com/c/9747fc2954ba98094cf43359cc1b1354?family=Romantiques);
+@import url(//db.onlinewebfonts.com/c/d92d3fc882e0851f06c69388573d7e99?family=Money+Money+Plus);
+@font-face {font-family: "Money Money Plus"; src: url("//db.onlinewebfonts.com/t/d92d3fc882e0851f06c69388573d7e99.eot"); src: url("//db.onlinewebfonts.com/t/d92d3fc882e0851f06c69388573d7e99.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/d92d3fc882e0851f06c69388573d7e99.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/d92d3fc882e0851f06c69388573d7e99.woff") format("woff"), url("//db.onlinewebfonts.com/t/d92d3fc882e0851f06c69388573d7e99.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/d92d3fc882e0851f06c69388573d7e99.svg#Money Money Plus") format("svg"); }
+@font-face {font-family: "Romantiques"; src: url("//db.onlinewebfonts.com/t/9747fc2954ba98094cf43359cc1b1354.eot"); src: url("//db.onlinewebfonts.com/t/9747fc2954ba98094cf43359cc1b1354.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/9747fc2954ba98094cf43359cc1b1354.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/9747fc2954ba98094cf43359cc1b1354.woff") format("woff"), url("//db.onlinewebfonts.com/t/9747fc2954ba98094cf43359cc1b1354.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/9747fc2954ba98094cf43359cc1b1354.svg#Romantiques") format("svg"); }
 .navbar-div {
   border: 4px solid black;
   height: 4rem;
@@ -19,7 +24,10 @@
 }
 
 .app-title {
-  margin-right: 2rem;
+  /* margin-right: 2rem; */
+  font-family: "Money Money Plus";
+  font-size: 50px;
+  font-weight: 200;
 }
 .nav-buttons {
   /* width: 50%; */

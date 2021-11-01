@@ -9,7 +9,7 @@ function Navbar() {
       <div className="coin-container">
         <img className="nav-coin" src={coin} alt="golden coin" border="0" />
       </div>
-      <h1 className="app-title">LUCKY PENNY!</h1>
+      <h1 className="app-title">LUCKY PENNY</h1>
       <div className="nav-buttons">
         <Link to="/">
           <button>Home</button>
