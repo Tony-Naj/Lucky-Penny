@@ -31,15 +31,15 @@ const OrderForm = () => {
   return (
     <section id="order-section">
       <div className="order-div">
-        <div className="order-head">
-          <img
+        {/* <div className="order-head"> */}
+        {/* <img
             className="penny-pic-order"
             src={coin}
             alt="golden coin logo"
             border="0"
-          />
-          <p className="order-text">Order Now!</p>
-        </div>
+          /> */}
+        <p className="order-text">Order Now!</p>
+        {/* </div> */}
         <form className="order-form" onSubmit={handleSubmit}>
           {/* <label>First Name</label> */}
           <input
