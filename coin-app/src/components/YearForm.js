@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useHistory, useLocation } from "react-router";
 import "./YearForm.css";
+import plant from "../penny-plant.png";
 
 const initialFormValues = {
   years: "",
