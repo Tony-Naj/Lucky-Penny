@@ -18,7 +18,7 @@ function HomePage(props) {
       </div>
       <section className="section1">
         <div className="lucky-div">
-          <h3>Lucky Penny Lore</h3>
+          <h3 className="lore">Lucky Penny Lore</h3>
           <p>
             Ancient civilizations believed copper and other metals gifts from
             the gods intended to protect from evil. The initial origin of the

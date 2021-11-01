@@ -41,6 +41,11 @@
   align-items: center;
 }
 
+.lore {
+  font-family: "Money Money Plus";
+  font-size: 55px;
+  font-weight: 100;
+}
 
 
 /* TOP SECTION */
@@ -80,8 +85,9 @@
 }
 
 .shimmer {
-  font-size: 3.5vmin;
+  font-size: 2.5rem;
   color: #CBA181;
+  font-weight: 100;
 }
 
 /* body {
