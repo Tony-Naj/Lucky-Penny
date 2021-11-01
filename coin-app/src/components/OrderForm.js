@@ -38,7 +38,7 @@ const OrderForm = () => {
             alt="golden coin logo"
             border="0"
           /> */}
-        <p className="order-text">Order Now!</p>
+        <h3 className="order-text">Order Now!</h3>
         {/* </div> */}
         <form className="order-form" onSubmit={handleSubmit}>
           {/* <label>First Name</label> */}

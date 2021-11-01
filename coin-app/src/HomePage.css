@@ -76,6 +76,7 @@
 
 
 .lucky-div {
+  margin-top: 1.5rem;
   justify-content: center;
   align-items: center;
   border: 2px solid #FFA689;
@@ -111,6 +112,7 @@
   height: 90%;
   font-size: 32px;
   background-color: #CBA181;
+  margin-bottom: 1.5rem;
   
   /* padding: 4px; */
 }
@@ -139,9 +141,6 @@
   .lucky-div {
     justify-content: center;
     align-items: center;
-    border: 1px solid black;
-    border-radius: 4px;
-    box-shadow: 2px -2px 8px grey;
     height: 90%;
     width: 70%;
     text-align: center;
