@@ -21,7 +21,6 @@
 
 .order-form {
   /* border: 2px solid red; */
-  /* background-image: url("../paper.png"); */
   display: flex;
   flex-direction: column;
   justify-content: center;
