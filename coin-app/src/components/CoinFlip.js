@@ -4,6 +4,15 @@ import "./CoinFlip.css";
 function CoinFlip() {
   return (
     <div className="flip">
+      <div className="quote-div">
+        <h3 className="shimmer">
+          “Find a penny, pick it up. All day long you’ll have good luck.”
+        </h3>
+      </div>
+      <div className="quote-div">
+        <h3 className="shimmer">Every May 23rd is Lucky Penny Day!</h3>
+        <h3 className="shimmer">#LuckyPennyDay</h3>
+      </div>
       <div className="coin-flip">
         <div className="coin-heads">
           <img

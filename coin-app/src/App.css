@@ -1,14 +1,14 @@
 @import url(//db.onlinewebfonts.com/c/ba9019aa1b39b36ff007750ecf8296bf?family=LibertyW01-SC);
 /* //background-image: url("https://i.ibb.co/DLx6t0r/uses-for-pennies.jpg"); */
 .body {
-  /* font-family: 'LibertyW01-SC' */
+  background-color: #FFFDD1;
 }
-
 .App {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #FFFDD1;
   /* font-family: 'LibertyW01-SC'; */
   /* background: url('https://i.postimg.cc/MZ56hqsV/gray-textured-paper-striped-brown-craft-texture-34011853.jpg');
   background-repeat: no-repeat;

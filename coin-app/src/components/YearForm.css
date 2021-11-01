@@ -1,5 +1,5 @@
 #form-section {
-  background-color: lightgrey;
+  background-color: #FFFDD1;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -17,6 +17,7 @@
   box-shadow: 2px -2px 8px grey;
   height: 20rem;
   width: 40%;
+  background-color: #CBA181;
 }
 
 .year-form {
@@ -24,6 +25,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #CBA181;
 }
 
 .input-box {
