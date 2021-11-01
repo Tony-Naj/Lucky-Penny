@@ -2,6 +2,7 @@ import React from "react";
 import CoinFlip from "./components/CoinFlip";
 import DateForm from "./components/DateForm";
 import History from "./components/History";
+import penny from "./penny.png";
 import "./HomePage.css";
 
 function HomePage(props) {
@@ -12,11 +13,9 @@ function HomePage(props) {
       <div className="flip">
         <CoinFlip />
       </div>
-      {/* <div className="quote-div">
-        <h3 className="shimmer">
-          “Find a penny, pick it up. All day long you’ll have good luck.”
-        </h3>
-      </div> */}
+      <div className="penny-cont">
+        <img className="penny-front" src={penny} alt="penny" />
+      </div>
       <section className="section1">
         <div className="lucky-div">
           <h3>Lucky Penny Lore</h3>
