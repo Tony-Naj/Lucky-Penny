@@ -8,15 +8,16 @@
   flex-direction: column;
   /* background-color: #e6ded5; */
   border-radius: 8px;
-  box-shadow:  10px -10px 20px black;
+  box-shadow:  10px -10px 20px #FF6961;
   margin-top: 1rem;
+  background-color: #F1E1B3;
   /* position: relative;
   top: 1rem; */
   
 }
 
 .flip {
-  background-color: black;
+  background-color:#FFA689;
   width: 100%
 }
 
@@ -24,31 +25,32 @@
 
 .section1 {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   height: 60%;
+  background-color: #F1E1B3;
   /* border: 2px solid pink; */
 }
 
 .quote-div {
-  height: 50px;
+  height: auto;
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #F1E1B3;
 }
 /* FONT SHIMMER */
 
-.shimmer {
-  font-size: 20px;
-}
 
 .quote-div {
-  background: linear-gradient(
+  /* background: linear-gradient(
     to right, 
     hsl(120 100% 62%), 
     hsl(180 100% 59%)
-  );
+  ); */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center;
@@ -76,12 +78,14 @@
 .lucky-div {
   justify-content: center;
   align-items: center;
-  border: 1px solid black;
+  border: 2px solid #FFA689;
   border-radius: 4px;
-  box-shadow: 2px -2px 8px grey;
+  box-shadow: 4px -3px 8px #FF6961;
   height: 90%;
-  width: 40%;
+  width: 80%;
   text-align: center;
+  font-size: 32px;
+  background-color: #CBA181;
 }
 
 /* MIDDLE-TOP SECTION */
@@ -92,6 +96,7 @@
   align-items: center;
   text-align: center;
   margin-top: 3rem;
+  background-color: #F1E1B3;
   /* border: 3px solid orange; */
 }
 
@@ -99,11 +104,13 @@
   justify-content: center;
   text-align: center;
   align-items: center;
-  border: 1px solid black;
+  border: 2px solid #FFA689;
   border-radius: 4px;
-  box-shadow: 2px -2px 8px grey;
+  box-shadow: 4px -3px 8px #FF6961;
   width: 80%;
   height: 90%;
+  font-size: 32px;
+  background-color: #CBA181;
   
   /* padding: 4px; */
 }
@@ -114,7 +121,7 @@
   /* border: 2px solid black; */
   height: auto;
   width: 100%;
-  background-color: rgb(211,211,211);
+  background-color: #F1E1B3;
 
 }
 

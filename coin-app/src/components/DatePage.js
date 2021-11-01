@@ -32,6 +32,13 @@ function DatePage(props) {
           </ul>
         </div>
       </div>
+      <section id="years">
+        <div className="year-info">
+          <p>Choose the year of your birth or an important milestone!</p>
+          <p>It's your turn to GRAB your "super lucky penny"!</p>
+        </div>
+      </section>
+
       <div>
         <YearForm />
       </div>

@@ -49,7 +49,6 @@ function DateForm(props) {
   return (
     <section className="form-section">
       <div className="date-div">
-        <h3>Enter your Special Date</h3>
         <div className="coin">
           <div className="front"></div>
           <div className="front_b"></div>
