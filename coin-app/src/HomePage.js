@@ -52,8 +52,8 @@ function HomePage(props) {
       </section>
       <section className="section2">
         <div className="lucky-div2">
-          <p>Let us help you find YOUR super lucky penny!</p>
-          <p>Enter your special date!</p>
+          <h3>Let us help you find YOUR super lucky penny!</h3>
+          <h4>Enter your special date!</h4>
         </div>
       </section>
       <section id="dateform">

@@ -70,7 +70,7 @@ li {
   height: 85%;
   overflow-y: scroll;
   width: 40%;
-  background-color: #F1E1B3;
+  background-color: #A67B5B;
 }
 
 .events-h3 {
@@ -87,7 +87,7 @@ li {
   height: 85%;
   overflow-y: scroll;
   width: 40%;
-  background-color: #F1E1B3;
+  background-color: #A67B5B;
 }
 
 .births-h3 {
@@ -111,7 +111,7 @@ li {
   border-radius: 4px;
   box-shadow: 4px -3px 8px #FF6961;
   font-size: 28px;
-  background-color: #F1E1B3;
+  background-color: #A67B5B;
 }
 
 /* MEDIA QUERIES */
