@@ -34,6 +34,7 @@ const OrderForm = () => {
       <div className="order-div">
         <h3 className="order-text">Order Now!</h3>
         <form className="order-form" onSubmit={handleSubmit}>
+          <label htmlFor="First Name">First name:</label>
           <input
             type="text"
             name="firstName"
