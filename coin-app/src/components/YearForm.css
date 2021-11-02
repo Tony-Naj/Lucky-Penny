@@ -25,10 +25,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  background-color: #CBA181;
+  background-color: #cba181;
   height: 50%;
-  
+}
+
 .input-box {
   /* margin-top: 1.4rem; */
   /* margin-bottom: 1rem; */
