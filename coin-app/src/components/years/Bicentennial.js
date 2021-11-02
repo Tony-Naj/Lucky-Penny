@@ -1,7 +1,8 @@
 import React from "react";
 import OrderForm from "../OrderForm";
 
-function Bicentennial() {
+function Bicentennial(props) {
+  const { year } = props;
   const pennies = [
     {
       id: "lincoln-bicentennial",
@@ -17,6 +18,7 @@ function Bicentennial() {
       {pennies.map((penny) => {
         return (
           <div className="penny-card" key={penny.id}>
+            <h1>{year}</h1>
             <h2>{penny.title}</h2>
             <img className="penny-img" src={penny.url} alt={penny.alt} />
             <p>{penny.info}</p>
