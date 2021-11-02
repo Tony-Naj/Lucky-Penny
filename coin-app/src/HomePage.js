@@ -2,6 +2,7 @@ import React from "react";
 import CoinFlip from "./components/CoinFlip";
 import DateForm from "./components/DateForm";
 import History from "./components/History";
+import decoration from "./decoration.png";
 import penny from "./penny.png";
 import "./HomePage.css";
 
@@ -18,22 +19,26 @@ function HomePage(props) {
       </div>
       <section className="section1">
         <div className="lucky-div">
+          <img className="decoration" src={decoration} alt="decoration" />
           <h3 className="lore">Lucky Penny Lore</h3>
-          <p>
-            Ancient civilizations believed copper and other metals gifts from
-            the gods intended to protect from evil. The initial origin of the
-            “lucky penny” was fueled by superstitions such as horseshoes and
-            charm bracelets. The continuous human struggle between good and evil
-            is analogous to two sides of a coin.
-          </p>
-          <p>
-            Luck is a strange concept...yet it drives many of our beliefs. We
-            can feel it working around us every day. If you find a penny heads
-            up, luck is on your side! If tails show, you aren’t doomed! Flip it
-            over to bring luck to whoever finds it next! Some even say these
-            random pennies are placed for us to find by missed loved ones - a
-            sign they are okay.
-          </p>
+          <div className="p-tag">
+            <p>
+              Ancient civilizations believed copper and other metals gifts from
+              the gods intended to protect from evil. The initial origin of the
+              “lucky penny” was fueled by superstitions such as horseshoes and
+              charm bracelets. The continuous human struggle between good and
+              evil is analogous to two sides of a coin.
+            </p>
+            <p>
+              Luck is a strange concept...yet it drives many of our beliefs. We
+              can feel it working around us every day. If you find a penny heads
+              up, luck is on your side! If tails show, you aren’t doomed! Flip
+              it over to bring luck to whoever finds it next! Some even say
+              these random pennies are placed for us to find by missed loved
+              ones - a sign they are okay.
+            </p>
+          </div>
+          <img className="decoration" src={decoration} alt="decoration" />
         </div>
 
         {/* <div className="lucky-div">
