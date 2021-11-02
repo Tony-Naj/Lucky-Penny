@@ -21,6 +21,13 @@
     width: 60%;
 }
 
+.memorial {
+    position: relative;
+    height: auto;
+    width: 70%;
+    top: 4rem;
+}
+
 .history-title {
     font-size: 4rem;
     font-family: "Money Money Plus";

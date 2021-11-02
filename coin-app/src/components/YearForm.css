@@ -26,11 +26,14 @@
   justify-content: center;
   align-items: center;
   background-color: #CBA181;
+  height: 50%;
 }
 
 .input-box {
-  margin-top: 1.4rem;
-  margin-bottom: 1rem;
+  /* margin-top: 1.4rem; */
+  /* margin-bottom: 1rem; */
+  height: 4rem;
+  width: 2rem;
 }
 
 button {
@@ -187,6 +190,10 @@ button {
   100% {
     transform: rotateY(360deg);
   }
+}
+
+.input {
+  height: 2rem;
 }
 
 /* MEDIA QUERIES */

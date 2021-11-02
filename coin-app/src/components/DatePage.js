@@ -3,7 +3,7 @@ import "./DatePage.css";
 import YearForm from "./YearForm";
 
 function DatePage(props) {
-  const { events, births, date } = props;
+  const { events, births, date, year } = props;
 
   return (
     <section id="date-data">
@@ -40,7 +40,7 @@ function DatePage(props) {
       </section>
 
       <div>
-        <YearForm />
+        <YearForm year={year} />
       </div>
     </section>
   );

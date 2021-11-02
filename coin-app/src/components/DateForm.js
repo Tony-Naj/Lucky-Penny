@@ -10,7 +10,7 @@ const initialFormValues = {
 };
 
 function DateForm(props) {
-  const { births, setBirths, events, setEvents, date, setDate } = props;
+  const { setBirths, setEvents, setDate } = props;
 
   const [formValues, setFormValues] = useState(initialFormValues);
 
