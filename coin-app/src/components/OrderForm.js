@@ -98,7 +98,9 @@ const OrderForm = () => {
             value={formValues.phone_number}
             onChange={handleChange}
           />
-          <input className="button" type="submit" />
+          <button type="submit" onSubmit={handleSubmit}>
+            Get Lucky!
+          </button>
         </form>
       </div>
     </section>
