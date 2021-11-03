@@ -57,7 +57,7 @@ function DateForm(props) {
         </div>
 
         <form className="date-form" onSubmit={handleSubmit}>
-          {/* <label type="text">Choose a Day:</label> */}
+          <label type="text">Day:</label>
           <input
             className="input"
             type="integer"
@@ -69,7 +69,7 @@ function DateForm(props) {
             onChange={handleChange}
             id="day"
           />
-          {/* <label type="text">Choose a Month:</label> */}
+          <label type="text">Month:</label>
           <input
             className="input"
             type="text"
