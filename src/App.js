@@ -16,10 +16,6 @@ import Shield from "./components/years/Shield";
 import Confirmation from "./components/Confirmation";
 import Superstitions from "./components/Superstitions";
 import Scroll from "./Scroll.js";
-// import { loadStripe } from "@stripe/stripe-js";
-// import { Elements } from "@stripe/react-stripe-js";
-
-// const promise = loadStripe("pk_test_TYooMQauvdEDq54NiTphI7jx");
 
 function App() {
   const [events, setEvents] = useState([]);
