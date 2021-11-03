@@ -81,18 +81,18 @@ function DateForm(props) {
             id="month"
           />
           <datalist id="daysofmonth">
-            <option value="1" option="January"></option>
-            <option value="2" option="February"></option>
-            <option value="3" option="March"></option>
-            <option value="4" option="April"></option>
-            <option value="5" option="May"></option>
-            <option value="6" option="June"></option>
-            <option value="7" option="July"></option>
-            <option value="8" option="August"></option>
-            <option value="9" option="September"></option>
-            <option value="10" option="October"></option>
-            <option value="11" option="November"></option>
-            <option value="12" option="December"></option>
+            <option value="1-January" option="January"></option>
+            <option value="2-February" option="February"></option>
+            <option value="3-March" option="March"></option>
+            <option value="4-April" option="April"></option>
+            <option value="5-May" option="May"></option>
+            <option value="6-June" option="June"></option>
+            <option value="7-July" option="July"></option>
+            <option value="8-August" option="August"></option>
+            <option value="9-September" option="September"></option>
+            <option value="10-October" option="October"></option>
+            <option value="11-November" option="November"></option>
+            <option value="12-December" option="December"></option>
           </datalist>
 
           <button type="submit" onSubmit={handleSubmit}>

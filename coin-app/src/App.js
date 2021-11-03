@@ -15,6 +15,7 @@ import Bicentennial from "./components/years/Bicentennial";
 import Shield from "./components/years/Shield";
 import Confirmation from "./components/Confirmation";
 import Superstitions from "./components/Superstitions";
+import Scroll from "./Scroll.js";
 // import { loadStripe } from "@stripe/stripe-js";
 // import { Elements } from "@stripe/react-stripe-js";
 
@@ -27,6 +28,7 @@ function App() {
 
   return (
     <div className="App">
+      <Scroll />
       <Navbar />
 
       <Route exact path="/">
