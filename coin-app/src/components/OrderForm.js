@@ -34,7 +34,7 @@ const OrderForm = () => {
       <div className="order-div">
         <h3 className="order-text">Order Now!</h3>
         <form className="order-form" onSubmit={handleSubmit}>
-          <label htmlFor="First Name">First name:</label>
+          <label type="text">First name:</label>
           <input
             type="text"
             name="firstName"
@@ -42,6 +42,7 @@ const OrderForm = () => {
             value={formValues.name_first}
             onChange={handleChange}
           />
+          <label type="text">Last Name:</label>
           <input
             type="text"
             name="lastName"
@@ -49,6 +50,7 @@ const OrderForm = () => {
             value={formValues.name_last}
             onChange={handleChange}
           />
+          <label type="text">Email:</label>
           <input
             type="email"
             name="email"
@@ -56,6 +58,7 @@ const OrderForm = () => {
             value={formValues.email}
             onChange={handleChange}
           />
+          <label type="text">Address:</label>
           <input
             type="text"
             name="streetAddress"
@@ -63,6 +66,7 @@ const OrderForm = () => {
             value={formValues.street_address}
             onChange={handleChange}
           />
+          <label type="text">City:</label>
           <input
             type="text"
             name="city"
@@ -70,6 +74,7 @@ const OrderForm = () => {
             value={formValues.city}
             onChange={handleChange}
           />
+          <label type="text">State:</label>
           <input
             type="text"
             name="state"
@@ -77,6 +82,7 @@ const OrderForm = () => {
             value={formValues.state}
             onChange={handleChange}
           />
+          <label type="text">Zip:</label>
           <input
             type="text"
             name="zip"
@@ -84,6 +90,7 @@ const OrderForm = () => {
             value={formValues.zip_code}
             onChange={handleChange}
           />
+          <label type="text">Phone:</label>
           <input
             type="tel"
             name="telephone"
