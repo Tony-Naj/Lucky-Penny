@@ -44,7 +44,7 @@ function DateForm(props) {
 
   useEffect(() => {
     fetchData();
-  }, []);
+  });
 
   return (
     <section className="form-section">
