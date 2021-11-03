@@ -1,18 +1,14 @@
 @import url(//db.onlinewebfonts.com/c/ba9019aa1b39b36ff007750ecf8296bf?family=LibertyW01-SC);
-/* //background-image: url("https://i.ibb.co/DLx6t0r/uses-for-pennies.jpg"); */
 .body {
-  background-color: #FFFDD1;
+  background-color: #fffdd1;
 }
 .App {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #FFFDD1;
-  /* font-family: 'LibertyW01-SC'; */
-  /* background: url('https://i.postimg.cc/MZ56hqsV/gray-textured-paper-striped-brown-craft-texture-34011853.jpg');
-  background-repeat: no-repeat;
-  background-size: 110%; */
+  background-color: #fffdd1;
+  font-family: "Lato", sans-serif;
 }
 
 .penny-lore {
@@ -23,9 +19,7 @@
   width: 40%;
 }
 
-
 .static {
   background: whitesmoke;
   height: 500px;
 }
-

@@ -20,7 +20,11 @@ function Navbar() {
           <button>History</button>
         </Link>
         <Link to="/superstitions">
-          <button>Superstitions</button>
+          <button>
+            Fun
+            <br />
+            Facts
+          </button>
         </Link>
       </div>
     </div>

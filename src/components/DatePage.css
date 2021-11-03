@@ -6,6 +6,7 @@
 li {
   padding: 4px 8px 4px 0px;
 }
+
 /* ****************************************** */
 
 /* DATE HEADING */
@@ -16,15 +17,15 @@ li {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-image: url('https://i.postimg.cc/gjqsR0yh/shutterstock-116238544.jpg');
+  background-image: url("https://i.postimg.cc/gjqsR0yh/shutterstock-116238544.jpg");
   /* background-repeat: no-repeat; */
 }
 
 .spinner {
   margin-bottom: 2rem;
   font-size: 3rem;
-  color:aliceblue;
-  text-shadow: 1px -2px 4px #FF6961;
+  color: aliceblue;
+  text-shadow: 1px -2px 4px #ff6961;
   text-align: center;
   animation-name: spin, depth;
   animation-timing-function: linear;
@@ -62,7 +63,6 @@ li {
   justify-content: space-around;
   align-items: center;
   height: 80vh;
-  /* border: 1px solid green; */
 }
 
 /* EVENTS DIV */
@@ -70,13 +70,13 @@ li {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  border: 2px solid #FFA689;
+  border: 2px solid #ffa689;
   border-radius: 4px;
-  box-shadow: 4px -3px 8px #FF6961;
+  box-shadow: 4px -3px 8px #ff6961;
   height: 85%;
   overflow-y: scroll;
   width: 40%;
-  background-color: #A67B5B;
+  background-color: #a67b5b;
 }
 
 .events-h3 {
@@ -87,13 +87,13 @@ li {
 
 /* BIRTHS DIV */
 .births {
-  border: 2px solid #FFA689;
+  border: 2px solid #ffa689;
   border-radius: 4px;
-  box-shadow: 4px -3px 8px #FF6961;
+  box-shadow: 4px -3px 8px #ff6961;
   height: 85%;
   overflow-y: scroll;
   width: 40%;
-  background-color: #A67B5B;
+  background-color: #a67b5b;
 }
 
 .births-h3 {
@@ -128,15 +128,15 @@ li {
 }
 
 .year-info {
-  border: 2px solid #FFA689;
+  border: 2px solid #ffa689;
   border-radius: 4px;
-  box-shadow: 4px -3px 8px #FF6961;
+  box-shadow: 4px -3px 8px #ff6961;
   font-size: 28px;
   width: 59%;
-  color:aliceblue;
-  text-shadow: 1px -2px 4px #FF6961;
-  background-color: #A67B5B;
-  background-image: url('https://i.postimg.cc/gjqsR0yh/shutterstock-116238544.jpg');
+  color: aliceblue;
+  text-shadow: 1px -2px 4px #ff6961;
+  background-color: #a67b5b;
+  background-image: url("https://i.postimg.cc/gjqsR0yh/shutterstock-116238544.jpg");
 }
 
 /* MEDIA QUERIES */

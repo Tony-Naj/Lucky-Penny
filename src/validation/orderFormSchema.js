@@ -1,5 +1,5 @@
 import * as yup from "yup";
-import ofSchema from "../validation/orderFormSchema.js";
+import ofSchema from "./orderFormSchema.js";
 
 const phoneRegEx = /^[+]?(\d{1,2})?[\s.-]?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/;
 
