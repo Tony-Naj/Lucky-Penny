@@ -1,14 +1,13 @@
 import * as yup from "yup";
-import ofSchema from "./orderFormSchema.js";
 
 const phoneRegEx = /^[+]?(\d{1,2})?[\s.-]?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/;
 
 export default yup.object().shape({
-  name_first: yup
+  firstName: yup
     .string()
     .required("First name is required")
-    .min(3, "First name must be 3 chars long"),
-  name_last: yup
+    .min(2, "First name must be 2 chars long"),
+  lastName: yup
     .string()
     .required("Last name is required")
     .min(3, "Last name must be 3 chars long"),
@@ -16,7 +15,7 @@ export default yup.object().shape({
     .string()
     .email("must be a valid email")
     .required("email is required"),
-  street_address: yup.string().required("Street address is required"),
+  streetAddress: yup.string().required("Street address is required"),
   city: yup
     .string()
     .required("City is required")
@@ -26,12 +25,12 @@ export default yup.object().shape({
     .required("State is required")
     .min(2, "State must be 2 char")
     .max(2, "State must be 2 char"),
-  zip_code: yup
+  zip: yup
     .string()
     .required("Zip code is required")
     .min(5, "Zip code must be 5 char")
     .max(11, "Zip code must be less than 11 char"),
-  phone_number: yup
+  telephone: yup
     .string()
     .matches(phoneRegEx, "Must be a valid phone number")
     .required("Phone number is required"),

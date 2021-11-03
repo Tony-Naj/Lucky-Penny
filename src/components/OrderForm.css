@@ -14,20 +14,27 @@
   justify-content: center;
   align-items: center;
   /* height: 45rem; */
-  width: 25%;
+  width: 40%;
   margin-bottom: 1rem;
+  padding-top: 1rem;
   background-color: #a67b5b;
 }
 
+.form-container {
+  margin-top: -2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .order-form {
   /* border: 2px solid red; */
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   padding: 1rem;
   margin-bottom: 1rem;
-  width: 50%;
+  width: 70%;
   background-color: #a67b5b;
 }
 
@@ -52,8 +59,4 @@
   text-align: center;
   /* text-align: start; */
   /* margin-right: 2rem; */
-}
-input {
-  /* padding: 10px; */
-  margin: 10px;
 }

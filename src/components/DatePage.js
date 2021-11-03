@@ -12,7 +12,7 @@ function DatePage(props) {
       </div>
       <div className="info">
         <div className="events">
-          <h3 className="events-h3">{`Moments in history from ${date}th:`}</h3>
+          <h3 className="events-h3">{`Moments in history from ${date}:`}</h3>
           <ul>
             {events.map((event) => (
               <li className="list">
@@ -22,7 +22,7 @@ function DatePage(props) {
           </ul>
         </div>
         <div className="births">
-          <h3 className="births-h3">{`Notable birthdays on ${date}th:`}</h3>
+          <h3 className="births-h3">{`Notable birthdays on ${date}:`}</h3>
           <ul>
             {births.map((birth) => (
               <li className="list">

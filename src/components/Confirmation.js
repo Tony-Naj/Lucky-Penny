@@ -32,7 +32,7 @@ function Confirmation() {
             src="https://i.ibb.co/vchsJQ0/Untitled.png"
             alt="spin"
           />
-          <img className="copy-img" src={oeo} alt="Naj's Logo" />
+          {/* <img className="copy-img" src={oeo} alt="Naj's Logo" />s */}
         </div>
         <p>Copyright © 2021 | Anthony Cortese | Onaje Ooladuwa </p>
       </section>
