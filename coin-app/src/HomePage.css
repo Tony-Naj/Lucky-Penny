@@ -3,7 +3,6 @@
 .home {
   height: 100%;
   width: 85%;
-  /* border: 4px solid #FF6961; */
   display: flex;
   flex-direction: column;
   /* background-color: #e6ded5; */
@@ -11,8 +10,6 @@
   box-shadow:  10px -10px 20px #FF6961;
   margin-top: 1rem;
   background-color: #F1E1B3;
-  /* position: relative;
-  top: 1rem; */
   
 }
 
