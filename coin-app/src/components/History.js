@@ -51,8 +51,8 @@ const pennies = [
 function History() {
   return (
     <section id="history">
+      <img className="memorial" src={memorial} alt="memorial" />
       <div className="history-intro">
-        <img className="memorial" src={memorial} alt="memorial" />
         <h1 className="history-title">History of the Penny</h1>
         <p className="history-text">
           While “pennies” in one form or another have existed for more than

@@ -3,7 +3,6 @@
 .home {
   height: 100%;
   width: 85%;
-  /* border: 4px solid #FF6961; */
   display: flex;
   flex-direction: column;
   /* background-color: #e6ded5; */
@@ -45,6 +44,8 @@
   font-family: "Money Money Plus";
   font-size: 55px;
   font-weight: 100;
+  position: relative;
+  bottom: 1rem
 }
 
 .p-tags {
@@ -56,10 +57,17 @@
 }
 
 .decoration {
-  width: 25%;
+  width: 6%;
   /* height: 10%; */
   position: relative;
-  top: 2rem;
+  top: 1rem;
+}
+
+.decoration1 {
+  width: 5%;
+  /* height: 10%; */
+  /* position: absolute;
+  top: 2rem; */
 }
 
 /* TOP SECTION */
@@ -113,10 +121,33 @@
 
 .lucky-div {
   margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border: 2px solid #FFA689;
+  /* border-radius: 4px; */
+  box-shadow: 4px -3px 8px #FF6961;
+  height: 50%;
+  width: 99%;
+  text-align: center;
+  font-size: 32px;
+  background-color: #CBA181;
+  /* bottom: 10rem */
+}
+
+.lore-info {
+  position: relative;
+  bottom: 2rem;
+}
+
+.lucky-div3 {
+  margin-top: 2.5rem;
   justify-content: center;
   align-items: center;
   border: 2px solid #ffa689;
   border-radius: 4px;
+<<<<<<< HEAD
   box-shadow: 4px -3px 8px #ff6961;
   height: 90%;
   width: 80%;
@@ -124,6 +155,14 @@
   font-size: 32px;
   background-color: #cba181;
   /* bottom: 10rem */
+=======
+  box-shadow: 4px -3px 8px #FF6961;
+  height: 50%;
+  width: 90%;
+  text-align: center;
+  font-size: 32px;
+  background-color: #CBA181;
+>>>>>>> 6d86f54e19abe792987264d9ac73049b1b3a982d
 }
 
 /* MIDDLE-TOP SECTION */
@@ -160,7 +199,12 @@
   /* border: 2px solid black; */
   height: auto;
   width: 100%;
+<<<<<<< HEAD
   background-color: #f1e1b3;
+=======
+  background-color: rgb(186, 183, 183);
+
+>>>>>>> 6d86f54e19abe792987264d9ac73049b1b3a982d
 }
 
 @media (max-width: 650px) {
