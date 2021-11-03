@@ -1,6 +1,6 @@
 # Lucky-Penny
 
-Building out a full database of lucky pennies by the year
+An app designed to identify and source a lucky penny to improve the "luck" of potential users.
 
 {/_ if day and month are valid render to date page,
 if they are not valid display an error message
