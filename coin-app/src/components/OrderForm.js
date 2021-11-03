@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import { useHistory } from "react-router";
-import * as yup from "yup";
+// import * as yup from "yup";
 import "./OrderForm.css";
-import coin from "../coin.png";
 
 const initialFormValues = {
   name_first: "",
@@ -32,6 +31,12 @@ const OrderForm = () => {
   return (
     <section id="order-section">
       <div className="order-div">
+        <div className="coin">
+          <div className="front"></div>
+          <div className="front_b"></div>
+          <div className="back"></div>
+          <div className="back_b"></div>
+        </div>
         <h3 className="order-text">Order Now!</h3>
         <form className="order-form" onSubmit={handleSubmit}>
           <label type="text">First name:</label>

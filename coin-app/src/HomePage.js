@@ -1,8 +1,8 @@
 import React from "react";
 import CoinFlip from "./components/CoinFlip";
 import DateForm from "./components/DateForm";
-import History from "./components/History";
-import decoration from "./decoration.png";
+// import History from "./components/History";
+// import decoration from "./decoration.png";
 import penny from "./penny.png";
 import "./HomePage.css";
 
