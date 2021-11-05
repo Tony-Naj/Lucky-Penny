@@ -58,7 +58,9 @@ function YearForm() {
           <div className="back_b"></div>
         </div>
         <form className="year-form" onSubmit={handleSubmit}>
-          <label type="text">Lucky year:</label>
+          <label className="year-form-label" type="text">
+            Select your lucky year:
+          </label>
           <input
             className="input-box"
             type="integer"

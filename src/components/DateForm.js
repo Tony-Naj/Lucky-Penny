@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import { useHistory } from "react-router-dom";
 import axios from "axios";
 import "./DateForm.css";
+import * as yup from "yup";
+import dfSchema from "../validation/dateFormSchema";
 // import DatePage from "./DatePage";
 
 const initialFormValues = {
@@ -11,13 +13,34 @@ const initialFormValues = {
 
 function DateForm(props) {
   const { setBirths, setEvents, setDate } = props;
-
   const [formValues, setFormValues] = useState(initialFormValues);
+  const [disabled, setDisabled] = useState(true);
+  const [errors, setErrors] = useState(initialFormValues);
+
+  useEffect(() => {
+    dfSchema.isValid(formValues).then((valid) => {
+      setDisabled(!valid);
+    });
+  }, [formValues]);
 
   const history = useHistory();
 
   const handleChange = (e) => {
-    setFormValues({ ...formValues, [e.target.name]: e.target.value });
+    const { name, value } = e.target;
+    yup
+      .reach(dfSchema, name)
+      .validate(value)
+      .then((valid) => {
+        setErrors({ ...errors, [name]: "" });
+      })
+      .catch((err) => {
+        setErrors({ ...errors, [name]: err.errors[0] });
+      });
+    setFormValues({
+      ...formValues,
+      [name]: value,
+    });
+    // setFormValues({ ...formValues, [e.target.name]: e.target.value });
   };
 
   const handleSubmit = (e) => {
@@ -49,19 +72,18 @@ function DateForm(props) {
   return (
     <section className="form-section">
       <div className="date-div">
-        <h4>Enter your special date!</h4>
         <div className="coin">
           <div className="front"></div>
           <div className="front_b"></div>
           <div className="back"></div>
           <div className="back_b"></div>
         </div>
+        <h4>Enter your special date!</h4>
         <div className="form-container">
           <form className="date-form" onSubmit={handleSubmit}>
             <label type="text">
               Day:
               <input
-                className="input"
                 type="integer"
                 min="0"
                 max="31"
@@ -71,11 +93,11 @@ function DateForm(props) {
                 onChange={handleChange}
                 id="day"
               />
+              <p>{errors.day}</p>
             </label>
             <label type="text">
               Month:
               <input
-                className="input"
                 type="text"
                 name="month"
                 placeholder="Month"
@@ -84,6 +106,7 @@ function DateForm(props) {
                 onChange={handleChange}
                 id="month"
               />
+              <p>{errors.month}</p>
             </label>
             <datalist id="daysofmonth">
               <option value="1-January" option="January"></option>
@@ -100,6 +123,7 @@ function DateForm(props) {
               <option value="12-December" option="December"></option>
             </datalist>
             <button
+              disabled={disabled}
               className="date-button"
               type="submit"
               onSubmit={handleSubmit}

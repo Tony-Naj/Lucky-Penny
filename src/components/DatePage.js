@@ -35,7 +35,7 @@ function DatePage(props) {
       <section id="years">
         <div className="year-info">
           <h3>Choose the year of your birth or an important milestone!</h3>
-          <h4>It's your turn to GRAB your "super lucky penny"!</h4>
+          <h4>Grab your "super lucky penny" now!</h4>
         </div>
       </section>
 

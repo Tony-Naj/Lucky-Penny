@@ -14,17 +14,17 @@ function Navbar() {
       <h1 className="app-title">LUCKY PENNY</h1>
       <div className="nav-buttons">
         <Link to="/">
-          <button>Home</button>
+          <nav>Home</nav>
         </Link>
         <Link to="/history">
-          <button>History</button>
+          <nav>History</nav>
         </Link>
         <Link to="/superstitions">
-          <button>
+          <nav>
             Fun
             <br />
             Facts
-          </button>
+          </nav>
         </Link>
       </div>
     </div>
