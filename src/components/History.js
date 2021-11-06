@@ -51,7 +51,7 @@ const pennies = [
 function History() {
   return (
     <section id="history">
-      <img className="memorial" src={memorial} alt="memorial" />
+      {/* <img className="memorial" src={memorial} alt="memorial" /> */}
       <div className="history-intro">
         <h1 className="history-title">History of the Penny</h1>
         <p className="history-text">

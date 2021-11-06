@@ -4,6 +4,7 @@ import axios from "axios";
 import "./DateForm.css";
 import * as yup from "yup";
 import dfSchema from "../validation/dateFormSchema";
+import Coin from "./Coin.js";
 // import DatePage from "./DatePage";
 
 const initialFormValues = {
@@ -40,7 +41,6 @@ function DateForm(props) {
       ...formValues,
       [name]: value,
     });
-    // setFormValues({ ...formValues, [e.target.name]: e.target.value });
   };
 
   const handleSubmit = (e) => {
@@ -72,16 +72,11 @@ function DateForm(props) {
   return (
     <section className="form-section">
       <div className="date-div">
-        <div className="coin">
-          <div className="front"></div>
-          <div className="front_b"></div>
-          <div className="back"></div>
-          <div className="back_b"></div>
-        </div>
+        <Coin />
         <h4>Enter your special date!</h4>
         <div className="form-container">
           <form className="date-form" onSubmit={handleSubmit}>
-            <label type="text">
+            <label className="date-label" type="text">
               Day:
               <input
                 type="integer"
@@ -93,9 +88,10 @@ function DateForm(props) {
                 onChange={handleChange}
                 id="day"
               />
-              <p>{errors.day}</p>
             </label>
-            <label type="text">
+            <p className="woohoo">{errors.day}</p>
+
+            <label className="date-label" type="text">
               Month:
               <input
                 type="text"
@@ -106,8 +102,8 @@ function DateForm(props) {
                 onChange={handleChange}
                 id="month"
               />
-              <p>{errors.month}</p>
             </label>
+            <p>{errors.month}</p>
             <datalist id="daysofmonth">
               <option value="1-January" option="January"></option>
               <option value="2-February" option="February"></option>

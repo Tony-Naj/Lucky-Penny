@@ -1,72 +1,72 @@
 #history {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
 }
 
 #pennies {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .history-intro {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 40%;
-    border: 1px solid black;
-    height: 25%;
-    border: 4px solid black;
-    background-color: #F1E1B3;
-    border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 55%;
+  border: 1px solid black;
+  height: 25%;
+  border: 4px solid black;
+  background-color: #f1e1b3;
+  border-radius: 8px;
   /* box-shadow:  10px -10px 10px rgb(96, 89, 89); */
-  margin-top: .2rem;
+  margin-top: 0.2rem;
   padding: 1rem;
   margin: 1rem;
 }
 
 .memorial {
-    position: relative;
-    height: auto;
-    width: 30%;
-    margin: 1rem;
-    /* top: 4rem; */
+  position: relative;
+  height: auto;
+  width: 30%;
+  margin: 1rem;
+  /* top: 4rem; */
 }
 
 .history-title {
-    font-size: 3rem;
-    font-family: "Money Money Plus";
-    font-weight: 100;
+  font-size: 3rem;
+  font-family: "Money Money Plus";
+  font-weight: 100;
 }
 
 .history-text {
 }
 
 .penny-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 25%;
-    width: 60%;
-    padding-left: 1rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    border: 4px solid black;
-    background-color: #A67B5B;
-    border-radius: 8px;
-  box-shadow:  10px -10px 10px rgb(96, 89, 89)
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 25%;
+  width: 75%;
+  padding-left: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 4px solid black;
+  background-color: #a67b5b;
+  border-radius: 8px;
+  box-shadow: 10px -10px 10px rgb(96, 89, 89);
 }
 
 .penny-img {
-    height: 20%;
-    width: 60%;
-    border: 8px solid black;
-    border-radius: 8px;
-    box-shadow:  10px -10px 10px rgb(81, 76, 76)
+  height: 20%;
+  width: 60%;
+  border: 8px solid black;
+  border-radius: 8px;
+  box-shadow: 10px -10px 10px rgb(81, 76, 76);
 }

@@ -248,3 +248,19 @@
     font-size: 18px;
   }
 }
+
+@media (max-width: 500px) {
+  .lucky-div {
+    font-size: 20px;
+  }
+
+  .lucky-div2 {
+    width: 60%;
+    font-size: 20px;
+  }
+
+  .lucky-div3 {
+    width: 73%;
+    font-size: 18px;
+  }
+}

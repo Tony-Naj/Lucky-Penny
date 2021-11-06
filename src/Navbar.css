@@ -81,12 +81,27 @@ button:hover {
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 700px) {
+  .nav-buttons {
+    width: 35%;
+  }
+  .app-title {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 550px) {
   .nav-coin {
-    display: none;
+    /* display: none; */
   }
 
   .app-title {
     font-size: 1rem;
+  }
+}
+
+@media (max-width: 475px) {
+  .app-title {
+    font-size: 0.7rem;
   }
 }

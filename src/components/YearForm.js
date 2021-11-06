@@ -1,7 +1,9 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useHistory } from "react-router";
 import "./YearForm.css";
-// import plant from "../penny-plant.png";
+import * as yup from "yup";
+import yfSchema from "../validation/yearFormSchema";
+import Coin from "./Coin";
 
 const initialFormValues = {
   years: "",
@@ -9,14 +11,33 @@ const initialFormValues = {
 
 function YearForm() {
   const [formValues, setFormValues] = useState(initialFormValues);
+  const [disabled, setDisabled] = useState(true);
+  const [errors, setErrors] = useState(initialFormValues);
+
+  useEffect(() => {
+    yfSchema.isValid(formValues).then((valid) => {
+      setDisabled(!valid);
+    });
+  }, [formValues]);
 
   const history = useHistory();
-  // const location = useLocation();
 
   const handleChange = (e) => {
-    setFormValues({ ...formValues, [e.target.name]: e.target.value });
+    const { name, value } = e.target;
+    yup
+      .reach(yfSchema, name)
+      .validate(value)
+      .then((valid) => {
+        setErrors({ ...errors, [name]: "" });
+      })
+      .catch((err) => {
+        setErrors({ ...errors, [name]: err.errors[0] });
+      });
+    setFormValues({
+      ...formValues,
+      [name]: value,
+    });
   };
-  console.log("year", formValues.years);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -51,20 +72,17 @@ function YearForm() {
     <section id="form-section">
       <div className="year-input">
         {/* <h2>Get your new penny!</h2> */}
-        <div className="coin">
-          <div className="front"></div>
-          <div className="front_b"></div>
-          <div className="back"></div>
-          <div className="back_b"></div>
-        </div>
+        <Coin />
         <form className="year-form" onSubmit={handleSubmit}>
           <label className="year-form-label" type="text">
+            {" "}
             Select your lucky year:
           </label>
+
           <input
             className="input-box"
             type="integer"
-            min="1"
+            min="1859"
             max="2021"
             name="years"
             placeholder="Choose your year"
@@ -72,7 +90,10 @@ function YearForm() {
             onChange={handleChange}
             id="years"
           />
-          <button type="submit">GET LUCKY!</button>
+          <p>{errors.years}</p>
+          <button disabled={disabled} type="submit">
+            GET LUCKY!
+          </button>
         </form>
       </div>
     </section>

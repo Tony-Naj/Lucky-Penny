@@ -3,6 +3,7 @@ import { useHistory } from "react-router";
 import * as yup from "yup";
 import "./OrderForm.css";
 import ofSchema from "../validation/orderFormSchema.js";
+import Coin from "./Coin";
 
 const initialFormValues = {
   firstName: "",
@@ -53,12 +54,7 @@ const OrderForm = () => {
   return (
     <section id="order-section">
       <div className="order-div">
-        <div className="coin">
-          <div className="front"></div>
-          <div className="front_b"></div>
-          <div className="back"></div>
-          <div className="back_b"></div>
-        </div>
+        <Coin />
         <h3 className="order-text">Order Now!</h3>
         <div className="form-container">
           <form className="order-form" onSubmit={handleSubmit}>
