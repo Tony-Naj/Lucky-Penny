@@ -57,22 +57,28 @@
   font-weight: 200;
 }
 .nav-buttons {
-  border: 1px solid black;
-  width: 25%;
+  /* border: 1px solid red; */
+  /* width: 15%; */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-end;
-  /* margin-left: 20rem; */
+  padding-right: 4rem;
 }
 
-button {
+nav {
+  padding-right: 2rem;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+/* button {
   margin-right: 2rem;
 }
 
 button:hover {
   background-color: rgba(87, 128, 0, 0.259);
-}
+} */
 
 @media (max-width: 1225px) {
   .app-title {
@@ -101,7 +107,26 @@ button:hover {
 }
 
 @media (max-width: 475px) {
+  .navbar-div {
+    height: 3rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-coin {
+    display: none;
+  }
+
   .app-title {
     font-size: 0.7rem;
+  }
+
+  nav {
+    margin-left: 1rem;
+    padding-right: 0.5rem;
+    font-size: 0.8rem;
   }
 }

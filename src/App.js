@@ -1,7 +1,7 @@
 import "./App.css";
 import React, { useState } from "react";
 import DatePage from "./components/DatePage";
-import Navbar from "./Navbar";
+import Navbar from "./Navbar.js";
 import HomePage from "./HomePage";
 import History from "./components/History";
 // import CheckoutForm from "./components/CheckoutForm";
