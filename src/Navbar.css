@@ -72,6 +72,10 @@ nav {
   font-size: 1.2rem;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* button {
   margin-right: 2rem;
 }

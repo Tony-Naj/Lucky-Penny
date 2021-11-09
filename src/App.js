@@ -76,10 +76,6 @@ function App() {
       <Route path="/Confirmation">
         <Confirmation />
       </Route>
-
-      {/* <Elements stripe={promise}>
-        <CheckoutForm />
-      </Elements> */}
     </div>
   );
 }

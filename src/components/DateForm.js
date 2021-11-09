@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import { useHistory } from "react-router-dom";
 import axios from "axios";
 import "./DateForm.css";
@@ -46,14 +46,17 @@ function DateForm(props) {
   const handleSubmit = (e) => {
     e.preventDefault();
     fetchData();
+    console.log("handle Submit");
     history.push("/DatePage");
   };
 
   let url = `https://history.muffinlabs.com/date/${formValues.month}/${formValues.day}`;
   const fetchData = async () => {
+    console.log("fetch data");
     await axios
       .get(url)
       .then((res) => {
+        console.log("got a response");
         const entries = Object.entries(res.data);
         setEvents(entries[2][1].Events);
         setBirths(entries[2][1].Births);
@@ -65,9 +68,17 @@ function DateForm(props) {
       });
   };
 
+  const fetchDataCallback = useCallback(fetchData, [
+    setBirths,
+    setDate,
+    setEvents,
+    url,
+  ]);
+
   useEffect(() => {
-    fetchData();
-  });
+    console.log("calling fetch data");
+    fetchDataCallback();
+  }, [fetchDataCallback]);
 
   return (
     <section className="form-section">
