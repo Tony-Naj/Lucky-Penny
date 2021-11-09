@@ -3,6 +3,7 @@ import OrderForm from "../OrderForm";
 
 function Bicentennial(props) {
   const { year } = props;
+  console.log(year);
   const pennies = [
     {
       id: "lincoln-bicentennial",

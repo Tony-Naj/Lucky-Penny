@@ -4,6 +4,7 @@ import YearForm from "./YearForm";
 
 function DatePage(props) {
   const { events, births, date, year } = props;
+  console.log(year, date, births, events);
 
   return (
     <section id="date-data">

@@ -58,7 +58,7 @@ function DateForm(props) {
         setEvents(entries[2][1].Events);
         setBirths(entries[2][1].Births);
         setDate(res.data.date);
-        console.log(res.data);
+        console.log("year", res.data.year);
       })
       .catch((err) => {
         console.log(err);
