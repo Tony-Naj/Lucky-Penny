@@ -11,7 +11,7 @@ function Navbar() {
           <img className="nav-coin" src={coin} alt="golden coin" border="0" />
         </a>
       </div>
-      <h1 className="app-title">LUCKY PENNY</h1>
+      {/* <h1 className="app-title">LUCKY PENNY</h1> */}
       <div className="nav-buttons">
         <Link to="/">
           <nav>Home</nav>
@@ -22,6 +22,9 @@ function Navbar() {
         <Link to="/superstitions">
           <nav>Fun-facts</nav>
         </Link>
+      </div>
+      <div className="luck-penny">
+        <h1>#LuckyPennyDay</h1>
       </div>
     </div>
   );

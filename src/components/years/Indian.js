@@ -13,6 +13,7 @@ function Indian() {
   ];
   return (
     <section id="pennies">
+      {/* <h1 className="orderform-title">This will be your lucky penny!</h1> */}
       {pennies.map((penny) => {
         return (
           <div className="penny-card" key={penny.id}>

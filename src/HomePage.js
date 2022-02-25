@@ -1,9 +1,12 @@
 import React from "react";
 import CoinFlip from "./components/CoinFlip";
 import DateForm from "./components/DateForm";
+import { RiCoinLine } from "react-icons/ri";
+import { GiShamrock } from "react-icons/gi";
 // import History from "./components/History";
 // import decoration from "./decoration.png";
-import penny from "./penny.png";
+// import penny from "./penny.png";
+import penny from "./pennystack.jpeg";
 import "./HomePage.css";
 
 function HomePage(props) {
@@ -11,28 +14,23 @@ function HomePage(props) {
 
   return (
     <section className="home">
-      <div className="flip">
+      {/* <div className="flip">
         <CoinFlip />
-      </div>
-      <div className="penny-cont">
+      </div> */}
+      <section id="img-section">
         <img className="penny-front" src={penny} alt="penny" />
-      </div>
+        <div className="penny-cont">
+          <h1 className="front-title">Lucky Penny</h1>
+          <h2>What makes a penny lucky?</h2>
+        </div>
+        <CoinFlip />
+      </section>
+
       <section className="section1">
         <div className="lucky-div">
-          <img
-            className="decoration"
-            src="https://i.postimg.cc/nLwT5Z3W/pngwing-com-3.png"
-            border="0"
-            alt="pngwing-com-3"
-          />
-          {/* <img
-            className="decoration"
-            src="https://i.postimg.cc/C1mrwkMc/pngwing-com-2.png"
-            border="0"
-            alt="pngwing-com-2"
-          /> */}
-          <h3 className="lore">Lucky Penny Lore</h3>
+          {/* <h3 className="lore">Lucky Penny Lore</h3> */}
           <div className="lore-info">
+            <RiCoinLine className="react-icons" />
             <p>
               Ancient civilizations believed copper and other metals gifts from
               the gods intended to protect from evil. The initial origin of the
@@ -43,6 +41,13 @@ function HomePage(props) {
           </div>
         </div>
         <div className="lucky-div3">
+          {/* <img
+            className="lucky-icon"
+            src="https://i.postimg.cc/nLwT5Z3W/pngwing-com-3.png"
+            border="0"
+            alt="pngwing-com-3"
+          /> */}
+          <GiShamrock className="react-icons" />
           <p>
             Luck is a strange concept...yet it drives many of our beliefs. We
             can feel it working around us every day. If you find a penny heads
@@ -51,19 +56,12 @@ function HomePage(props) {
             random pennies are placed for us to find by missed loved ones - a
             sign they are okay.
           </p>
-          <img
-            className="decoration1"
-            src="https://i.postimg.cc/nLwT5Z3W/pngwing-com-3.png"
-            border="0"
-            alt="pngwing-com-3"
-          />
         </div>{" "}
-      </section>
-      <section className="section2">
         <div className="lucky-div2">
           <h3>Let us help you find YOUR super lucky penny!</h3>
         </div>
       </section>
+      <section className="section2"></section>
       <section id="dateform">
         <div>
           <DateForm

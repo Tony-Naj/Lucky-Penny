@@ -54,9 +54,9 @@ const OrderForm = () => {
   return (
     <section id="order-section">
       <div className="order-div">
-        <Coin />
+        {/* <Coin /> */}
         <h3 className="order-text">Order Now!</h3>
-        <div className="form-container">
+        <div className="orderform-container">
           <form className="order-form" onSubmit={handleSubmit}>
             <label type="text">
               First name:

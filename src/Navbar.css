@@ -35,7 +35,7 @@
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
 }
 
@@ -47,7 +47,12 @@
 .nav-coin {
   height: 40%;
   width: 40%;
-  margin-right: 2rem;
+}
+
+.luck-penny {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .app-title {
@@ -61,8 +66,8 @@
   /* width: 15%; */
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-end;
+  justify-content: flex-start;
+  /* align-items: flex-end; */
   padding-right: 4rem;
 }
 

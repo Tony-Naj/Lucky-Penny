@@ -2,9 +2,10 @@
 
 .home {
   height: 100%;
-  width: 85%;
+  width: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   /* background-color: #e6ded5; */
   border-radius: 8px;
   box-shadow: 10px -10px 20px black;
@@ -22,7 +23,7 @@
 
 .penny-cont {
   height: auto;
-  width: 100%;
+  width: 50%;
   /* margin-top: .5rem; */
   display: flex;
   flex-direction: row;
@@ -34,16 +35,17 @@
 
 .penny-front {
   width: 100%;
-  height: 20%;
+  height: 60%;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .lore {
   font-family: "Money Money Plus";
-  font-size: 55px;
+  font-size: 25px;
   font-weight: 100;
   position: relative;
   bottom: 1rem;
@@ -58,10 +60,11 @@
 }
 
 .decoration {
-  width: 6%;
+  width: 10%;
   /* height: 10%; */
   position: relative;
-  top: 1rem;
+  font-color: black;
+  /* top: 1rem; */
 }
 
 .decoration1 {
@@ -73,12 +76,29 @@
 
 /* TOP SECTION */
 
+#img-section {
+  height: 70%;
+}
+
+.front-title {
+  position: absolute;
+  font-size: 7rem;
+  bottom: 50%;
+  color: whitesmoke;
+}
+
+.react-icons {
+  font-size: 4rem;
+}
+
 .section1 {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
   height: 60%;
+  width: 85%;
+  margin-left: 12%;
   background-color: #f1e1b3;
   /* border: 2px solid pink; */
 }
@@ -90,51 +110,24 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: aqua;
+  /* color: aqua; */
   background-color: #f1e1b3;
 }
-/* FONT SHIMMER */
-
-.quote-div {
-  background: linear-gradient(to right, hsl(120 100% 62%), hsl(180 100% 59%));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-align: center;
-}
-
-.shimmer {
-  font-size: 2rem;
-  color: #cba181;
-  font-weight: 100;
-}
-
-/* body {
-  background: hsl(204 100% 5%);
-  
-  min-block-size: 100%;
-  min-inline-size: 100%;
-  box-sizing: border-box;
-  display: grid;
-  place-content: center;
-  font-family: system-ui;
-  font-size: min(200%, 5vmin);
-} */
 
 .lucky-div {
-  margin-top: 1.5rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  border: 2px solid #ffa689;
-  /* border-radius: 4px; */
-  box-shadow: 4px -3px 8px #ff6961;
+  /* border: 2px solid #ffa689;
+  box-shadow: 4px -3px 8px #ff6961; */
   height: 50%;
-  width: 99%;
+  width: 30%;
   text-align: center;
-  font-size: 32px;
-  background-color: #cba181;
+  font-size: 15px;
+  /* background-color: #cba181; */
   /* bottom: 10rem */
+  margin-top: 6rem;
 }
 
 .lore-info {
@@ -143,29 +136,25 @@
 }
 
 .lucky-div3 {
-  margin-top: 2.5rem;
+  margin-top: 2rem;
   justify-content: center;
   align-items: center;
-  border: 2px solid #ffa689;
+  /* border: 2px solid #ffa689;
   border-radius: 4px;
-  box-shadow: 4px -3px 8px #ff6961;
+  box-shadow: 4px -3px 8px #ff6961; */
   height: 90%;
-  width: 80%;
+  width: 30%;
   text-align: center;
-  font-size: 32px;
-  background-color: #cba181;
+  font-size: 15px;
+  /* background-color: #cba181; */
   /* bottom: 10rem */
 }
 
 /* MIDDLE-TOP SECTION */
-.section2 {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin-top: 3rem;
+#section2 {
+  margin-top: 6rem;
   background-color: #f1e1b3;
+  height: 40%;
   /* border: 3px solid orange; */
 }
 
@@ -176,11 +165,11 @@
   border: 2px solid #ffa689;
   border-radius: 4px;
   box-shadow: 4px -3px 8px #ff6961;
-  width: 55%;
+  width: 30%;
   height: 90%;
-  font-size: 32px;
+  font-size: 15px;
   background-color: #ae886b;
-  margin-bottom: 1.5rem;
+  /* margin-bottom: 1.5rem; */
 
   /* padding: 4px; */
 }
@@ -189,7 +178,8 @@
 
 #dateform {
   /* border: 2px solid black; */
-  height: auto;
+  /* height: auto; */
+  margin-top: 5rem;
   width: 100%;
   background-color: #f1e1b3;
 }
