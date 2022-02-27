@@ -2,6 +2,7 @@ import React from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 import coin from "./coin.png";
+import Countdown from "./components/years/Countdown";
 
 function Navbar() {
   return (
@@ -24,7 +25,9 @@ function Navbar() {
         </Link>
       </div>
       <div className="luck-penny">
-        <h1>#LuckyPennyDay</h1>
+        <h3 className="hashtag">#LuckyPennyDay</h3>
+
+        <Countdown />
       </div>
     </div>
   );

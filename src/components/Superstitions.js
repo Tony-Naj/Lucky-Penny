@@ -1,11 +1,18 @@
 import React from "react";
+import CoinFlip from "./CoinFlip";
 import "./Superstitions.css";
 
 function Superstitions() {
   return (
     <section id="super">
       <div className="super-div">
-        <h1>Penny Superstitions</h1>
+        <img
+          className="two-face"
+          src="https://i.postimg.cc/XYhqmRyy/Two-face-dc-comics-20080605023632011-000.jpg"
+          border="0"
+          alt="Two-face-dc-comics-20080605023632011-000"
+        />
+        <h1 className="lore">Penny Superstitions</h1>
         <ul>
           <li>
             Do not spend a penny that you find. Instead, save it for luck.
@@ -54,6 +61,7 @@ function Superstitions() {
             broke.
           </li>
         </ul>
+        <CoinFlip />
       </div>
     </section>
   );

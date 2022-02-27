@@ -28,9 +28,9 @@ function HomePage(props) {
 
       <section className="section1">
         <div className="lucky-div">
-          {/* <h3 className="lore">Lucky Penny Lore</h3> */}
           <div className="lore-info">
             <RiCoinLine className="react-icons" />
+            <h3>Penny Lore</h3>
             <p>
               Ancient civilizations believed copper and other metals gifts from
               the gods intended to protect from evil. The initial origin of the
@@ -48,6 +48,7 @@ function HomePage(props) {
             alt="pngwing-com-3"
           /> */}
           <GiShamrock className="react-icons" />
+          <h3>Is every penny lucky?</h3>
           <p>
             Luck is a strange concept...yet it drives many of our beliefs. We
             can feel it working around us every day. If you find a penny heads
