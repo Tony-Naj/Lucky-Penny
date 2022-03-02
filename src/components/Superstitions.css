@@ -1,5 +1,5 @@
 #super {
-    height: 100vh;
+    height: 110vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -17,8 +17,8 @@
     border-radius: 8px;
     box-shadow:  10px -10px 10px rgb(96, 89, 89);
     background-color: black;
-    opacity: .8;
-    background-image: url('../Two-Face.jpeg');
+    /* opacity: .8; */
+    /* background-image: url('../Two-Face.jpeg'); */
 
     /* padding-left: 1rem;
     margin-top: 1rem;
@@ -39,8 +39,8 @@
 }
 
 .lore {
-  font-size: 2rem;
-  color: #587175;
+  font-size: 3.5rem;
+  color: #00ddff;
 }
 
 li {

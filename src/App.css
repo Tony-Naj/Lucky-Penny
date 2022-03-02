@@ -1,13 +1,13 @@
 @import url(//db.onlinewebfonts.com/c/ba9019aa1b39b36ff007750ecf8296bf?family=LibertyW01-SC);
 .body {
-  background-color: #fffdd1;
+  background-color: #e6ecee;
 }
 .App {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #fffdd1;
+  background-color: #e6ecee;
   font-family: "Lato", sans-serif;
 }
 
@@ -36,9 +36,9 @@ label {
 }
 
 input {
-  padding: 10px;
-  margin: 10px;
-  margin-top: 2rem;
+  padding: 8px;
+  margin:  8px;
+  /* margin-top: 2rem; */
   border-radius: 4px;
   background-color: #ffa689;
   height: .2rem;
@@ -47,13 +47,16 @@ input {
 
 button {
   border-radius: 8px;
-  margin-top: 1rem;
-  height: 3rem;
-  width: 7rem;
+  /* margin-top: 1rem; */
+  height: 2rem;
+  width: 8rem;
   border: 4px solid #ffa689;
-  background-color: #fffdd1;
-  color: #ffa689;
+  background-color: #a2e0f8;
+  color: black;
   align-self: center;
+  position: relative;
+  /* bottom: 2rem; */
+  /* left: 30%; */
   /* margin-left: 16px; */
 }
 

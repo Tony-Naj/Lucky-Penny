@@ -6,12 +6,6 @@ function Superstitions() {
   return (
     <section id="super">
       <div className="super-div">
-        <img
-          className="two-face"
-          src="https://i.postimg.cc/XYhqmRyy/Two-face-dc-comics-20080605023632011-000.jpg"
-          border="0"
-          alt="Two-face-dc-comics-20080605023632011-000"
-        />
         <h1 className="lore">Penny Superstitions</h1>
         <ul>
           <li>
@@ -61,6 +55,12 @@ function Superstitions() {
             broke.
           </li>
         </ul>
+        <img
+          className="two-face"
+          src="https://i.postimg.cc/XYhqmRyy/Two-face-dc-comics-20080605023632011-000.jpg"
+          border="0"
+          alt="Two-face-dc-comics-20080605023632011-000"
+        />
         <CoinFlip />
       </div>
     </section>

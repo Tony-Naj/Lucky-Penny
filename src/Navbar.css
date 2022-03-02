@@ -103,6 +103,26 @@ button:hover {
     font-weight: 200;
   }
 }
+@media (max-width: 970px) {
+  .luck-penny {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+  }
+  .hashtag {
+    font-size: 1rem;
+    position: relative;
+    bottom: 1.7rem;
+  }
+
+  .nav-buttons {
+    width: 30%;
+    position: relative;
+    right: 2rem;
+    border: 1px solid red;
+  }
+}
+
 
 @media (max-width: 700px) {
   .nav-buttons {
@@ -113,9 +133,11 @@ button:hover {
   }
 }
 
-@media (max-width: 550px) {
-  .nav-coin {
-    /* display: none; */
+@media (max-width: 600px) {
+  .nav-buttons {
+    width: 10%;
+    flex-direction: column;
+    justify-content: space-evenly;
   }
 
   .app-title {
@@ -134,7 +156,7 @@ button:hover {
   }
 
   .nav-coin {
-    display: none;
+    /* display: none; */
   }
 
   .app-title {
@@ -144,6 +166,6 @@ button:hover {
   nav {
     margin-left: 1rem;
     padding-right: 0.5rem;
-    font-size: 0.8rem;
+    font-size: .8rem;
   }
 }

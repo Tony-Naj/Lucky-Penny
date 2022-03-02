@@ -27,23 +27,28 @@
   flex-direction: column;
   justify-content: center;
   /* align-items: center; */
-  padding: 22px;
+  /* padding: 22px; */
   margin-bottom: 4rem;
   margin-left: 4rem;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   height: 100%;
 }
 
 .dateform-title {
-  font-size: 3.5rem;
+  font-size: 5.5rem;
   position: absolute;
-  border: 3px solid red;
+  /* bottom: 1rem; */
+  /* border: 3px solid red; */
+  margin-bottom: 12rem;
 }
 
 .form-data {
   position: relative;
+  margin-top: 5rem;
   top: 4.5rem;
-  border: 1px solid black;
+  /* border: 1px solid black; */
+  width: 130%;
+  font-size: 30px;
 }
 
 .penny-form {
@@ -52,23 +57,25 @@
 }
 
 .form-container {
-  /* margin-top: -5rem; */
+  /* margin-top: 7rem; */
   height: 80%;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border: 1px solid red;
+  /* border: 1px solid red; */
+  position: relative;
+  /* bottom: 2rem; */
   /* align-items: center; */
 }
 
 .date-form {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
-  width: 70%;
+  min-width: 120%;
   border: 1px solid black;
-  /* margin-left: 8rem; */
+  margin-left: 6rem;
   /* align-items: center; */
 }
 
@@ -98,7 +105,7 @@ input .date-label {
 /* Small devices (Mobile, Landscape, less than 768px) */
 @media (max-width: 767.98px) {
   .date-div {
-    width: 50%;
+    width: 90%;
   }
 }
 

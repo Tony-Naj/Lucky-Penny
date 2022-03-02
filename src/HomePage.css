@@ -3,7 +3,7 @@
 
 .home {
   height: 100%;
-  width: 100%;
+  min-width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -11,21 +11,21 @@
   border-radius: 8px;
   box-shadow: 10px -10px 20px black;
   margin-top: 1rem;
-  background-color: #f1e1b3;
+  background-color: #e6ecee;
   font-family: 'Hubballi', cursive;
   /* position: relative;
   top: 1rem; */
 }
 
 .flip {
-  background-color: #ffa689;
+  /* background-color: #ffa689; */
   width: 100%;
   height: 20%;
 }
 
 .penny-cont {
-  height: 35%;
-  width: 50%;
+  min-height: 50%;
+  min-width: 60%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -33,7 +33,7 @@
   border: 0 1px 0 1px solid #ff6961;
   border: 1px solid #ff6961;
   position: absolute;
-  bottom: 50%;
+  bottom: 14rem
 }
 
 .penny-front {
@@ -84,8 +84,30 @@
 }
 
 .front-title {
-  font-size: 5rem;
-  color: whitesmoke;
+  font-size: 7rem;
+  color: #c6d4d8;
+  /* text-shadow: -1px -2px 0 #b87333, 2px -1px 0 #b87333, -2px 1px 0 #b87333, 2px 2px 0 #b87333; */
+  text-shadow: 0 0 2px #fff, 0 0 5px #fff, 0 0 10px #aac2ce, 0 0 15px #aac2ce, 0 0 20px #aac2ce, 0 0 30px #aac2ce, 0 0 35px #aac2ce;
+  animation: neon 3s linear infinite;
+}
+
+@keyframes neon {
+50% {
+opacity: 1;
+}
+}
+
+.front-para {
+  margin-bottom: 5rem;
+  position: relative;
+  bottom: 5rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: 	#87a9cc;
+  text-decoration: double;
+  /* border: 1px solid black; */
+  width: 80%;
 }
 
 .react-icons {
@@ -99,8 +121,8 @@
   align-items: center;
   height: 60%;
   width: 85%;
-  margin-left: 12%;
-  background-color: #f1e1b3;
+  margin-left: 8%;
+  background-color: #e6ecee;
   /* border: 2px solid pink; */
 }
 
@@ -116,45 +138,39 @@
 }
 
 .lucky-div {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  margin-top: 2rem;
+  justify-content: center;
   align-items: center;
-  /* border: 2px solid #ffa689;
-  box-shadow: 4px -3px 8px #ff6961; */
-  height: 50%;
+  padding: 7px;
+  border: 2px solid #aac2ce;
+  height: 90%;
   width: 30%;
   text-align: center;
-  font-size: 15px;
-  /* background-color: #cba181; */
-  /* bottom: 10rem */
-  margin-top: 6rem;
+  font-size: 20px;
+
 }
 
 .lore-info {
   position: relative;
-  bottom: 2rem;
+  /* bottom: 1rem; */
 }
 
 .lucky-div3 {
   margin-top: 2rem;
   justify-content: center;
   align-items: center;
-  /* border: 2px solid #ffa689;
-  border-radius: 4px;
-  box-shadow: 4px -3px 8px #ff6961; */
+  padding: 7px;
+  border: 2px solid #aac2ce;
   height: 90%;
   width: 30%;
   text-align: center;
-  font-size: 15px;
-  /* background-color: #cba181; */
-  /* bottom: 10rem */
+  font-size: 19px;
 }
 
 /* MIDDLE-TOP SECTION */
 #section2 {
   margin-top: 6rem;
-  background-color: #f1e1b3;
+  background-color: #e6ecee;
   height: 40%;
   /* border: 3px solid orange; */
 }
@@ -182,7 +198,7 @@
   /* height: auto; */
   margin-top: 5rem;
   width: 100%;
-  background-color: #f1e1b3;
+  background-color: #e6ecee;
 }
 
 @media (max-width: 1200px) {
@@ -197,11 +213,11 @@
   }
 
   .lucky-div {
-    font-size: 24px;
+    font-size: 20px;
   }
 
   .lucky-div3 {
-    font-size: 24px;
+    font-size: 20px;
   }
 
   .lore {
@@ -227,16 +243,17 @@
     width: 85%;
     text-align: center;
     margin: 1rem;
+    font-size: 18px;
   }
 
   .lucky-div2 {
     width: 60%;
-    font-size: 24px;
+    font-size: 20px;
   }
 
   .lucky-div3 {
     width: 73%;
-    font-size: 18px;
+    
   }
 }
 

@@ -3,6 +3,7 @@ import CoinFlip from "./components/CoinFlip";
 import DateForm from "./components/DateForm";
 import { RiCoinLine } from "react-icons/ri";
 import { GiShamrock } from "react-icons/gi";
+import { GiWheat } from "react-icons/gi";
 // import History from "./components/History";
 // import decoration from "./decoration.png";
 // import penny from "./penny.png";
@@ -21,7 +22,12 @@ function HomePage(props) {
         <img className="penny-front" src={penny} alt="penny" />
         <div className="penny-cont">
           <h1 className="front-title">Lucky Penny</h1>
-          <h2>What makes a penny lucky?</h2>
+          <h2 className="front-para">
+            “Find a penny, pick it up. All-day long, you’ll have good luck.” Or
+            something like that, right? But why? Why will you have good luck if
+            you swipe a penny off the sidewalk or discover one between the couch
+            cushions?
+          </h2>
         </div>
         <CoinFlip />
       </section>
@@ -58,8 +64,17 @@ function HomePage(props) {
             sign they are okay.
           </p>
         </div>{" "}
-        <div className="lucky-div2">
-          <h3>Let us help you find YOUR super lucky penny!</h3>
+        <div className="lucky-div3">
+          <GiWheat className="react-icons" />
+          <h3>The luckiest of pennies!</h3>
+          <p>
+            A lucky penny can be even luckier when they are of a certain kind.
+            For example, the Indian Head Penny and the Wheat Penny are both
+            considered lucky because of their rarity and higher value. The
+            Indian Head Penny was in circulation from 1859 – 1909 when the Wheat
+            Penny was introduced. The circulation of the Wheat Penny ended in
+            1956.
+          </p>
         </div>
       </section>
       <section className="section2"></section>

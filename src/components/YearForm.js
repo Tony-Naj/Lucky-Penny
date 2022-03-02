@@ -4,6 +4,7 @@ import "./YearForm.css";
 import * as yup from "yup";
 import yfSchema from "../validation/yearFormSchema";
 import Coin from "./Coin";
+import pennyyear from ".././IMG_1510.jpeg";
 
 const initialFormValues = {
   years: "",
@@ -71,8 +72,6 @@ function YearForm() {
   return (
     <section id="form-section">
       <div className="year-input">
-        {/* <h2>Get your new penny!</h2> */}
-        <Coin />
         <form className="year-form" onSubmit={handleSubmit}>
           <label className="year-form-label" type="text">
             {" "}
@@ -95,6 +94,9 @@ function YearForm() {
             GET LUCKY!
           </button>
         </form>
+        <div className="year-imgdiv">
+          <img className="penny-year" src={pennyyear} alt="penny-year" />
+        </div>
       </div>
     </section>
   );

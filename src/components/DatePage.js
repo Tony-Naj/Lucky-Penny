@@ -1,6 +1,7 @@
 import React from "react";
 import "./DatePage.css";
 import YearForm from "./YearForm";
+import pennydate from ".././penny.png";
 
 function DatePage(props) {
   const { events, births, date, year } = props;
@@ -8,7 +9,9 @@ function DatePage(props) {
   return (
     <section id="date-data">
       <div className="date-title">
+        <img className="date-img" src={pennydate} alt="pennydate" />
         <h1 className="spinner">{date}</h1>
+        <h3 className="spinner1">Special moments in history on this date!</h3>
       </div>
       <div className="info">
         <div className="events">

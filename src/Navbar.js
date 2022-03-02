@@ -17,17 +17,19 @@ function Navbar() {
         <Link to="/">
           <nav>Home</nav>
         </Link>
+
         <Link to="/history">
           <nav>History</nav>
         </Link>
+
         <Link to="/superstitions">
-          <nav>Fun-facts</nav>
+          <nav>Facts</nav>
         </Link>
       </div>
       <div className="luck-penny">
-        <h3 className="hashtag">#LuckyPennyDay</h3>
-
         <Countdown />
+        <h3 className="hashtag">#LuckyPennyDay</h3>
+        {/* <h3 className="hashtag"> May 23rd Countdown</h3> */}
       </div>
     </div>
   );

@@ -88,7 +88,9 @@ function DateForm(props) {
           <div className="dateform-info">
             <h1 className="dateform-title">MAKE YOUR OWN LUCK</h1>
             <h3 className="form-data">
-              Let us help you find YOUR super lucky penny! Begin by selecting a
+              Whether you believe in the luck behind the penny, it is still
+              always fun to find a nice, shiny penny throughout your day! Let us
+              help you find YOUR super lucky penny! Lets begin by selecting a
               very special date to you
             </h3>
           </div>

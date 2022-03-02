@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import "./Countdown.css";
 
 function Countdown() {
   const calculateTimeLeft = () => {
@@ -10,9 +11,9 @@ function Countdown() {
     if (difference > 0) {
       timeLeft = {
         days: Math.floor(difference / (1000 * 60 * 60 * 24)),
-        hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
-        minutes: Math.floor((difference / 1000 / 60) % 60),
-        seconds: Math.floor((difference / 1000) % 60),
+        hrs: Math.floor((difference / (1000 * 60 * 60)) % 24),
+        mins: Math.floor((difference / 1000 / 60) % 60),
+        secs: Math.floor((difference / 1000) % 60),
       };
     }
 
@@ -45,8 +46,8 @@ function Countdown() {
   });
 
   return (
-    <div>
-      {/* <h1>Lucky Penny Day {year} Countdown</h1> */}
+    <div className="countdown">
+      <h3 className="hashtag1">Countdown to May 23rd</h3>
       {timerComponents.length ? timerComponents : <span>Time's up!</span>}
     </div>
   );
