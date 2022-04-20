@@ -32,18 +32,18 @@
   align-items: center;
   border: 0 1px 0 1px solid #ff6961;
   border: 1px solid #ff6961;
-  position: absolute;
-  bottom: 14rem
+  /* position: absolute; */
+  /* bottom: 14rem */
 }
 
 .penny-front {
   width: 100%;
-  height: 60%;
+  height: 55%;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  position: relative;
+  position: absolute;
 }
 
 .lore {
@@ -85,7 +85,7 @@
 
 .front-title {
   font-size: 7rem;
-  color: #c6d4d8;
+  color: 	#2a3c48;
   /* text-shadow: -1px -2px 0 #b87333, 2px -1px 0 #b87333, -2px 1px 0 #b87333, 2px 2px 0 #b87333; */
   text-shadow: 0 0 2px #fff, 0 0 5px #fff, 0 0 10px #aac2ce, 0 0 15px #aac2ce, 0 0 20px #aac2ce, 0 0 30px #aac2ce, 0 0 35px #aac2ce;
   animation: neon 3s linear infinite;
@@ -236,7 +236,7 @@ opacity: 1;
     /* border: 2px solid pink; */
   }
 
-  .lucky-div {
+  /* .lucky-div {
     justify-content: center;
     align-items: center;
     height: 90%;
@@ -244,11 +244,12 @@ opacity: 1;
     text-align: center;
     margin: 1rem;
     font-size: 18px;
-  }
+  } */
 
-  .lucky-div2 {
-    width: 60%;
-    font-size: 20px;
+
+  .lucky-div {
+    width: 73%;
+    /* font-size: 20px; */
   }
 
   .lucky-div3 {
@@ -259,7 +260,7 @@ opacity: 1;
 
 @media (max-width: 500px) {
   .lucky-div {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .lucky-div2 {
@@ -268,7 +269,6 @@ opacity: 1;
   }
 
   .lucky-div3 {
-    width: 73%;
     font-size: 18px;
   }
 }

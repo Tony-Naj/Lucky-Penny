@@ -19,7 +19,6 @@ function HomePage(props) {
         <CoinFlip />
       </div> */}
       <section id="img-section">
-        <img className="penny-front" src={penny} alt="penny" />
         <div className="penny-cont">
           <h1 className="front-title">Lucky Penny</h1>
           <h2 className="front-para">
@@ -28,6 +27,7 @@ function HomePage(props) {
             you swipe a penny off the sidewalk or discover one between the couch
             cushions?
           </h2>
+          <img className="penny-front" src={penny} alt="penny" />
         </div>
         <CoinFlip />
       </section>
